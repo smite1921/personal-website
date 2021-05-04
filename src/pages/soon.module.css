@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--smit-blue);
+    overflow: hidden;
+}
+
+.title {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: clamp(4rem, -1.0000rem + 16.0000vw, 9rem);
+}
+
+.links {
+    font-size: clamp(var(--smit-l)/2, 6.4vw, var(--smit-l));
+    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
+    margin-left: 2rem;
+
+}

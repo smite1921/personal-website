@@ -1,0 +1,178 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--smit-yellow);
+    overflow: hidden;
+}
+
+.nav {
+    visibility: hidden;
+}
+
+.nav-bottom {
+    display: none;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills-text {
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+.textContainer {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.skills-textbox {
+    font-size: clamp(var(--smit-xs)/2, 2vw, var(--smit-xs));
+}
+
+.bullet {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bulletLeft {
+    padding: 2rem;
+    padding-top: 1rem;
+}
+
+.bulletRight {
+    padding: 2rem;
+    padding-top: 1rem;
+}
+
+.l {
+    font-size: clamp(var(--smit-l)/2, 6.4vw, var(--smit-l));
+    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
+}
+
+.xs {
+    font-size: clamp(var(--smit-xs)/2, 2vw, var(--smit-xs));
+}
+
+.skills-image {
+    flex-grow: 1;   
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    flex-shrink: 1;
+    margin: auto;
+}
+
+.experience {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-title {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.experience-box {
+    background-color: var(--smit-background);
+    flex-grow: 1;
+    margin: 2rem;
+    margin-top: 1rem;
+    display: flex;
+}
+
+
+
+.experience-box-timeline {
+    flex-grow: 4;
+    margin: 2rem;
+}
+
+
+.experience-box-history {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.experience-box-history {
+    flex-grow: 1;
+}
+
+.experience-box-title {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.experience-box-info{
+    flex-grow: 1;
+    background-color: var(--smit-black);
+    padding: 1rem;
+    max-width: 530px;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .container {
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .textContainer {
+        margin: 2rem;
+        margin-bottom: 0;
+    }
+
+    .bullet {
+        justify-content: space-evenly;
+    }
+
+    .bulletLeft {
+        padding-bottom: 0;
+    }
+    
+    .bulletRight {
+        padding-bottom: 0;
+    }
+
+
+    .experience-box-timeline {
+        display: none;
+    }
+
+    .experience-box-info{
+        max-width: 50%;
+        flex-grow: 1;
+    }
+
+    .experience-box-history {
+        flex-grow: 1;
+        max-width: 50%;
+        padding: 1rem;
+    }
+
+    .nav-bottom {
+        display: block;
+        visibility: hidden;
+    }
+
+    
+
+}
+@media only screen and (max-width: 1050px) {
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills-text {
+        min-width: 100%;
+    }
+
+    .skills-image {
+        padding-top: 1rem;
+        margin: 0;
+    }
+
+}

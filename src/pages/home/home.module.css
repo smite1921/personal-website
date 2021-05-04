@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--smit-background);
+}
+
+.nav {
+    visibility: hidden;
+}
+
+.home {
+    display: flex;
+    flex-grow: 1;
+}
+
+.text {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    flex-grow: 4;
+}
+
+.welcome {
+    flex-grow: 1;
+    display: flex;
+}
+
+.social {
+    padding: 1rem 0;
+}
+
+.image {
+    background:url(./background.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 0;
+    overflow: hidden;
+    flex-grow: 8;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .home {
+        display: flex;
+        flex-grow: 1;
+    }
+    
+    .text {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    
+    .welcome {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .social {
+        display: none;
+    }
+    
+    .image {    
+        flex-grow: 0;
+    }
+
+}

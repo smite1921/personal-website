@@ -1,0 +1,46 @@
+.name {
+    display: inline-block;
+}
+
+.textbox {
+    overflow: hidden;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: var(--smit-black);
+    color: var(--smit-green);
+    max-width: 650px;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.xl {
+    font-size: clamp(var(--smit-xl)/2, 11.2vw, var(--smit-xl));
+    line-height:  clamp(3rem,9.6000vw, 6rem);
+
+    ;
+}
+
+.l {
+    font-size: clamp(var(--smit-l)/2, 6.4vw, var(--smit-l));
+    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
+}
+
+.m {
+    font-size: clamp(var(--smit-m)/2, 3.6vw, var(--smit-m));
+}
+
+.s {
+    font-size: clamp(var(--smit-s)/2, 2.4vw, var(--smit-s));
+}
+
+.xs {
+    font-size: clamp(var(--smit-xs)/2, 2vw, var(--smit-xs));
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .textbox {
+        max-width: clamp(17.1875rem, 0.3125rem + 54.0000vw, 34.0625rem);
+    }
+
+}

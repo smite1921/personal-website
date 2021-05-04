@@ -1,0 +1,90 @@
+@import "../../css/typography.css";
+
+.header {
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0.3rem auto;
+}
+
+.pink {
+    color: var(--smit-pink);
+}
+
+.blue {
+    color: var(--smit-blue);
+}
+
+.yellow {
+    color: var(--smit-yellow);
+}
+
+.purple {
+    color: var(--smit-purple);
+}
+
+.peach {
+    color: var(--smit-peach);
+}
+
+.green {
+    color: var(--smit-green);
+}
+
+.orange {
+    color: var(--smit-orange);
+}
+
+.white {
+    color: var(--smit-white);
+}
+
+.background {
+    color: var(--smit-background);
+}
+
+.xs {
+    font-size: var(--smit-xs);
+}
+
+.s {
+    font-size: var(--smit-s);
+}
+
+.m {
+    font-size: var(--smit-m);
+}
+
+.l {
+    font-size: var(--smit-l);
+    line-height: calc(var(--smit-l) - 0.5rem);
+}
+
+.xl {
+    font-size: var(--smit-xl);
+    line-height: calc(var(--smit-xl) - 2rem);
+}
+
+.xxl {
+    font-size: var(--smit-xxl);
+}
+
+.calmed {
+    font-family: "calibre-medium",sans-serif;
+}
+
+.calsemiboldi{
+    font-family: "calibre-semibolditalic",sans-serif;
+}
+
+.avenirbook {
+    font-family: "avenir-book", sans-serif;
+}
+
+.avenirmed {
+    font-family: "avenir-medium", sans-serif;
+}
+
+.mono {
+    font-family: "mono", sans-serif;
+}
+

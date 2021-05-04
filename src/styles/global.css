@@ -1,0 +1,93 @@
+html {
+    --smit-pink:#eaa3a6;
+    --smit-blue: #7fcdd6;
+    --smit-yellow: #ecc20f;
+    --smit-purple: #c58dee;
+    --smit-peach: #eb9459;
+    --smit-green: #89e14a;
+    --smit-orange: #f27920;
+    --smit-black: #1a1a1a;
+    --smit-white: #efedec;
+    --smit-background: #232323;
+    --smit-xxs: 1rem;
+    --smit-xs:1.25rem;
+    --smit-s:1.5rem;
+    --smit-m:2.25rem;
+    --smit-l:4rem;
+    --smit-xl:7rem;
+    --smit-xxl:9rem;
+}
+
+svg {
+    vertical-align: middle;
+} 
+
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+.pink-color {
+    color: var(--smit-pink);
+}
+
+.blue-color {
+    color: var(--smit-blue);
+}
+
+.yellow-color {
+    color: var(--smit-yellow);
+}
+
+.purple-color {
+    color: var(--smit-purple);
+}
+
+.peach-color {
+    color: var(--smit-peach);
+}
+
+.green-color {
+    color: var(--smit-green);
+}
+
+.orange-color {
+    color: var(--smit-orange);
+}
+
+.black-color {
+    color: var(--smit-black);
+}
+
+.pink-background {
+    background: var(--smit-pink);
+}
+
+.blue-background {
+    background: var(--smit-blue);
+}
+
+.yellow-background {
+    background: var(--smit-yellow);
+}
+
+.purple-background {
+    background: var(--smit-purple);
+}
+
+.peach-background {
+    background: var(--smit-peach);
+}
+
+.green-background {
+    background: var(--smit-green);
+}
+
+.orange-background {
+    background: var(--smit-orange);
+}
+
+.black-background {
+    background: var(--smit-black);
+}

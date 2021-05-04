@@ -1,0 +1,39 @@
+.button {
+    display: inline-block;
+    font-family: "calibre-medium",sans-serif;
+    color: var(--smit-background);
+    background-color: var(--smit-green);
+    text-decoration: none;
+    padding: 0.75rem 0.75rem;
+    text-align: center;
+    border: none;
+    margin: 0.3rem 0;
+
+}
+
+.button:active {
+    outline: none;
+}
+
+.block {
+    position: absolute;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform 275ms ease;
+}
+
+.button:hover .block{
+    transform: translateX(0);
+}
+
+.block::before { 
+    display: inline-block;
+    content: 'resume';
+    color: var(--smit-white);
+    transform: translateX(100%);
+    transition: transform 275ms ease;
+  }
+
+.button:hover .block::before {
+    transform: translateX(0);
+}

@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--smit-purple);
+    overflow: hidden;
+}
+
+.nav {
+    visibility: hidden;
+}
+
+.nav-bottom {
+    display: none;
+}
+
+.title {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: clamp(4rem, -1.0000rem + 16.0000vw, 9rem);
+}
+
+.projects {
+    flex-grow: 1;
+    margin: 1rem 0rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.project-section {
+    display: flex;
+    margin: 0 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction: column;
+}
+
+.project-title {
+    display: flex;
+    background-color: var(--smit-black);
+    font-size: clamp(var(--smit-l)/2, 6.4vw, var(--smit-l));
+    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
+}
+
+.project-name {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.project-logo {
+    margin: auto;
+    width: 4rem;
+    padding: 1rem;
+    padding-left: 0rem;
+}
+
+.project-content {
+    padding: 1rem;
+    flex-grow: 1;
+    background-color: var(--smit-background);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content-platform {
+    padding-bottom: 0.5rem;
+    display: flex;
+}
+
+.project-content-header {
+
+}
+
+.project-content-links {
+    color: var(--smit-white);
+}
+
+.project-content-body {
+    flex-grow: 1;
+    padding: 0.5rem 0;
+}
+
+.project-content-footer {
+}
+
+.xxs {
+    font-size: clamp(var(--smit-xxs)/2, 1.6vw, var(--smit-xxs));
+}
+
+.xs {
+    font-size: clamp(var(--smit-xs)/2, 2vw, var(--smit-xs));
+}
+
+.l {
+    font-size: clamp(var(--smit-l)/2, 6.4vw, var(--smit-l));
+    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
+}
+
+.xxl {
+    font-size: clamp(4rem, -1.0000rem + 16.0000vw, 9rem);
+}
+
+@media only screen and (max-width: 1300px) {
+    
+    .container {
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .project-logo {
+        display: none;
+    }
+    
+    .project-name {
+        padding: 1rem;
+    }
+
+    .projects {
+        display: block;
+    }
+
+    .project-section {
+        padding: 1rem 0;
+    }
+
+    .nav-bottom {
+        display: block;
+        visibility: hidden;
+    }
+}
