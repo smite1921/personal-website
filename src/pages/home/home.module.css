@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background: var(--smit-background);
 }
 
@@ -24,6 +24,7 @@
 .welcome {
     flex-grow: 1;
     display: flex;
+    padding: 2rem;
 }
 
 .social {

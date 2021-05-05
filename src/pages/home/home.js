@@ -18,15 +18,15 @@ export default function Home() {
             <span className={styles.welcome}>
               <Welcome/>
             </span>
-            
-            <div className={styles.social}>
-              <Social/>
-            </div>
+                        
           
           </div>
+          
 
           <div className={styles.image}>
           </div>
+        
+        
           
         </div>
       </div>
