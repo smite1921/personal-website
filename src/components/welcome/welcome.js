@@ -67,7 +67,7 @@ export default function Welcome() {
             </div>
             
             <div className={styles.m}>
-                <Button text='resume' link='/soon'/>
+                <Button text='resume' link='/resume.pdf'/>
             </div>
 
             
