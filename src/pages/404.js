@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../components/header/header";
 import HeaderUnderline from "../components/header_underline/header_underline"
-import Button from "../components/button/button";
 import styles from "./404.module.css";
 import {COLOR, FONT} from "../styles/constants";
 
