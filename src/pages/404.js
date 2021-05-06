@@ -1,0 +1,28 @@
+import React from "react";
+import Header from "../components/header/header";
+import HeaderUnderline from "../components/header_underline/header_underline"
+import Button from "../components/button/button";
+import styles from "./404.module.css";
+import {COLOR, FONT} from "../styles/constants";
+
+export default function NotFound() {
+    return (
+      <div id='not-found' className={styles.container}>
+
+        <div className={styles.block}>
+            <div className={styles.title}>
+                <Header title='404' color={COLOR.WHITE} font={FONT.CAL_MED}/>
+            </div>
+            <div className={styles.text}>
+                <Header title='page not found' color={COLOR.WHITE} font={FONT.CAL_MED}/>
+                <div className={styles.link}>
+                    <HeaderUnderline flag={true} title='back to homepage' color={COLOR.GREEN} link='/'/>
+                </div>
+            </div>
+
+        </div>
+
+        
+      </div>
+    );
+}

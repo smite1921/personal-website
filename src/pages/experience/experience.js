@@ -44,6 +44,8 @@ export default function Experience() {
       case 2:
         color2 = '#efedec';
         break;
+      default:
+        break;
     }
 
     switch (activeIndex) {
@@ -56,10 +58,12 @@ export default function Experience() {
       case 2:
         color2 = '#ecc20f';
         break;
+      default:
+        break;
     }
 
     const hover = (index) => {
-      if (index != activeIndex) {
+      if (index !== activeIndex) {
         setHoverIndex(index);
       }
     }

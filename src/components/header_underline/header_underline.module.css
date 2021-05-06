@@ -109,4 +109,28 @@
     width: 100%;
 }
 
+.title-green {
+    font-family: "calibre-medium",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    color: var(--smit-green);
+    order: 1;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-green::after {
+    margin-top: 3px;
+    width: 0px;
+    content: '';
+    display: block;
+    order: 2;
+    height: 5px;
+    background: var(--smit-green);
+    transition: width 0.35s;
+}
+
+.title-green:hover::after {
+    width: 100%;
+}
+
 
