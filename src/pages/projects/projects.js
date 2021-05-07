@@ -7,7 +7,7 @@ import MazeLogo from "../../components/logos/maze_logo";
 import styles from "./projects.module.css";
 import {COLOR, FONT} from "../../styles/constants";
 
-function ProjectSection({name,logo,linkName,link,github,platform,description,tech}) {
+function ProjectSection({ name, logo, link, github, platform, description, tech }) {
   return(
       <div className={styles.projectSection}>
                 
@@ -32,8 +32,8 @@ function ProjectSection({name,logo,linkName,link,github,platform,description,tec
             <b><Header title='Links:' font={FONT.MONO} color={COLOR.WHITE}/> </b>
             <div className={`${styles.projectContentLinks}`}>
                 <ul>
-                  <li> <Header title={linkName === undefined ? 'Project Link' : linkName} font={FONT.MONO} color={COLOR.WHITE} link={link}/> </li>
-                  <li> <Header title='Github Link' font={FONT.MONO} color={COLOR.WHITE} link={github}/> </li>
+                  <li> <Header title={link !== '/soon' ? 'Project Link' : 'Project Link - Coming Soon'} font={FONT.MONO} color={COLOR.WHITE} link={link}/> </li>
+                  <li> <Header title={github !== '/soon' ? 'Github Link' : 'Github Link - Coming Soon'} font={FONT.MONO} color={COLOR.WHITE} link={github}/> </li>
                 </ul>
             </div>
 
@@ -66,7 +66,7 @@ export default function Project() {
           <Header title='projects' color={COLOR.WHITE} font={FONT.CAL_MED}/>
         </div>
 
-        <div className={styles.projects}>
+          <div className={styles.projects}>
       
           <ProjectSection 
             name='enigma machine' 

@@ -7,17 +7,16 @@ export default function Timeline({activeIndex, hoverIndex}) {
     const array = Array.from(Array(170).keys());
     const grid = array.map(index => {
         if (index === 21) {
-            return <div key={index.toString()} style={{border:'0.25px solid #efedec'}}></div>;
+            return <div key={index} style={{border:'0.25px solid #efedec'}}></div>;
         }
         else if ([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].includes(index)) {
-            return <div style={{borderLeft:'0.25px solid #efedec',borderTop:'0.25px solid #efedec',borderBottom:'0.25px solid #efedec'}}></div>;
+            return <div key={index} style={{borderLeft:'0.25px solid #efedec',borderTop:'0.25px solid #efedec',borderBottom:'0.25px solid #efedec'}}></div>;
         }
         else if ([41,61,83,102,121,143,145,147,169].includes(index)) {
-            return <div style={{borderLeft:'0.25px solid #efedec',borderRight:'0.25px solid #efedec',borderBottom:'0.25px solid #efedec'}}></div>;
+            return <div key={index} style={{borderLeft:'0.25px solid #efedec',borderRight:'0.25px solid #efedec',borderBottom:'0.25px solid #efedec'}}></div>;
         }
-        return <div style={{borderLeft:'0.25px solid #efedec',borderBottom:'0.25px solid #efedec'}}></div>;
+        return <div key={index} style={{borderLeft:'0.25px solid #efedec',borderBottom:'0.25px solid #efedec'}}></div>;
     })
-    console.log(activeIndex, hoverIndex)
     let color0 = '#b8b8b6';
     let color1 = '#b8b8b6';
     let color2 = '#b8b8b6';
@@ -34,6 +33,8 @@ export default function Timeline({activeIndex, hoverIndex}) {
       case 2:
         color2 = '#efedec';
         break;
+      default:
+        break;
     }
 
     switch (activeIndex) {
@@ -45,6 +46,8 @@ export default function Timeline({activeIndex, hoverIndex}) {
         break;
       case 2:
         color2 = '#ecc20f';
+        break;
+      default:
         break;
     }
 

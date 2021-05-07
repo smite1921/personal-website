@@ -10,7 +10,7 @@ export default function Sidebar(flag) {
 
     return (
         <div>
-            <span className={styles.mobile} onClick={() => setDisplay('0%')} >
+            <span className={styles.mobile} onClick={() => setDisplay('0%')}>
                 <Ham/>
             </span>
             <aside>

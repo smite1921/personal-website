@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import css from "./header.module.css";
-import {COLOR, SIZE, FONT} from "../../styles/constants"
+import {COLOR, FONT} from "../../styles/constants"
 
 function colorClass(color) {
     if (color === COLOR.BLUE) {
@@ -52,18 +52,25 @@ function fontClass(font) {
 }
 
 
-export default function Header({title, color, font, link}) {
+export default function Header({ title, color, font, link }) {
     if (link === undefined) {
         return(
             <div>
-                <a className={`${css.header} ${colorClass(color)} ${fontClass(font)}`}> {title} </a>
+                <span className={`${css.header} ${colorClass(color)} ${fontClass(font)}`}> {title} </span>
+            </div>
+        );
+    }
+    else if (!link.startsWith('/')) {
+        return (
+            <div>
+                <a href={link} className={`${css.header} ${colorClass(color)} ${fontClass(font)}`}> {title} </a>
             </div>
         );
     }
     else {
         return (
             <div>
-                <Link href={link} className={`${css.header} ${colorClass(color)} ${fontClass(font)}`}> {title} </Link>
+                <Link to={link} className={`${css.header} ${colorClass(color)} ${fontClass(font)}`}> {title} </Link>
             </div>
         );
     }

@@ -141,9 +141,9 @@ export default function Contact() {
           <rect className={styles.box} x="115.81" y="121.41" width="462" height="79" fill="#1a1a1a"/>
         
           {/* text */}
-          <text className={styles.text} transform="translate(125.81 180.35)" font-size="64" fill="#eb9459" font-family="Calibre-Medium, Calibre" font-weight="100"> contact </text>
-          <text className={styles.text} transform="translate(125.81 234.85)" font-size="32" fill="#efedec" font-family="Avenir-Medium, Avenir" font-weight="100"> location: toronto, canada </text>
-          <text className={styles.text} transform="translate(125.81 273.29)" font-size="32" fill="#efedec" font-family="Avenir-Medium, Avenir" font-weight="100"> email: smitp505@gmail.com </text> 
+          <text className={styles.text} transform="translate(125.81 180.35)" fontSize="64" fill="#eb9459" fontFamily="Calibre-Medium, Calibre" fontWeight="100"> contact </text>
+          <text className={styles.text} transform="translate(125.81 234.85)" fontSize="32" fill="#efedec" fontFamily="Avenir-Medium, Avenir" fontWeight="100"> location: toronto, canada </text>
+          <text className={styles.text} transform="translate(125.81 273.29)" fontSize="32" fill="#efedec" fontFamily="Avenir-Medium, Avenir" fontWeight="100"> email: smitp505@gmail.com </text> 
           
           {/* links */}
           <a href="https://www.linkedin.com/in/smit-patel-uoft/">

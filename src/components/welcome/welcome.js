@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../header/header";
 import Button from "../button/button";
-import {COLOR,SIZE,FONT} from "../../styles/constants";
+import {COLOR,FONT} from "../../styles/constants";
 import styles from "./welcome.module.css";
 
 export default function Welcome() {

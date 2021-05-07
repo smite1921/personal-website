@@ -16,6 +16,7 @@ html {
     --smit-l:4rem;
     --smit-xl:7rem;
     --smit-xxl:9rem;
+    background-color: var(--smit-background);
 }
 
 svg {
