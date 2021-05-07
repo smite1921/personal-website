@@ -41,13 +41,6 @@
 }
 
 @media only screen and (max-width: 1300px) {
-
-    
-    .container {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
     
     .home {
         display: flex;

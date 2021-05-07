@@ -33,30 +33,11 @@ function colorClass(color) {
     }
 }
 
-function sizeClass(size) {
-    if (size === SIZE.XS) {
-        return css.xs;
-    }
-    else if (size === SIZE.S) {
-        return css.s;
-    }
-    else if (size === SIZE.M) {
-        return css.m;
-    }
-    else if (size === SIZE.L) {
-        return css.l;
-    }
-    else if (size === SIZE.XL) {
-        return css.xl;
-    }
-}
-
 function fontClass(font) {
     if (font === FONT.CAL_MED) {
         return css.calmed;
     }
     else if (font === FONT.CAL_SEMIBOLD_I) {
-        console.log('final Step')
         return css.calsemiboldi;
     }
     else if (font === FONT.AVENIR_BOOK) {
@@ -71,18 +52,18 @@ function fontClass(font) {
 }
 
 
-export default function Header({title, color, size, font, link}) {
+export default function Header({title, color, font, link}) {
     if (link === undefined) {
         return(
             <div>
-                <a className={`${css.header} ${colorClass(color)} ${sizeClass(size)} ${fontClass(font)}`}> {title} </a>
+                <a className={`${css.header} ${colorClass(color)} ${fontClass(font)}`}> {title} </a>
             </div>
         );
     }
     else {
         return (
             <div>
-                <Link href={link} className={`${css.header} ${colorClass(color)} ${sizeClass(size)} ${fontClass(font)}`}>{title} </Link>
+                <Link href={link} className={`${css.header} ${colorClass(color)} ${fontClass(font)}`}> {title} </Link>
             </div>
         );
     }

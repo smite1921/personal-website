@@ -25,69 +25,59 @@ svg {
 html, body {
     margin: 0;
     overflow-x: hidden;
-
 }
 
-.pink-color {
-    color: var(--smit-pink);
+/* 
+Font Sizes
+
+Min height is set to 0vw for a bug in safari browsers.
+
+Bug: https://stackoverflow.com/questions/63965489/safari-14-min-max-clamp-not-working-with-vw-and-px-values 
+*/
+
+.xxs {
+    min-height: 0vw;
+    font-size: clamp(var(--smit-xxs)/2, 1.6vw, var(--smit-xxs));
 }
 
-.blue-color {
-    color: var(--smit-blue);
+.xs {
+    min-height: 0vw;
+    font-size: clamp(var(--smit-xs)/2, 2vw, var(--smit-xs));
 }
 
-.yellow-color {
-    color: var(--smit-yellow);
+.s {
+    min-height: 0vw;
+    font-size: clamp(var(--smit-s)/2,2.4vw,var(--smit-s));
 }
 
-.purple-color {
-    color: var(--smit-purple);
+.m {
+    min-height: 0vw;
+    font-size: clamp(var(--smit-m)/2, 3.6vw, var(--smit-m));
 }
 
-.peach-color {
-    color: var(--smit-peach);
+.l {
+    min-height: 0vw;
+    font-size: clamp(var(--smit-l)/2,6.4vw,var(--smit-l));
 }
 
-.green-color {
-    color: var(--smit-green);
+.cal-l{
+    min-height: 0vw;
+    font-size: clamp(var(--smit-l)/2,6.4vw,var(--smit-l));
+    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
 }
 
-.orange-color {
-    color: var(--smit-orange);
+.xl {
+    min-height: 0vw;
+    font-size: clamp(var(--smit-xl)/2,11.2vw,var(--smit-xl));
 }
 
-.black-color {
-    color: var(--smit-black);
+.cal-xl {
+    min-height: 0vw;
+    font-size: clamp(var(--smit-xl)/2,11.2vw,var(--smit-xl));
+    line-height:  clamp(3rem,9.6000vw, 6rem);
 }
 
-.pink-background {
-    background: var(--smit-pink);
-}
-
-.blue-background {
-    background: var(--smit-blue);
-}
-
-.yellow-background {
-    background: var(--smit-yellow);
-}
-
-.purple-background {
-    background: var(--smit-purple);
-}
-
-.peach-background {
-    background: var(--smit-peach);
-}
-
-.green-background {
-    background: var(--smit-green);
-}
-
-.orange-background {
-    background: var(--smit-orange);
-}
-
-.black-background {
-    background: var(--smit-black);
+.xxl {
+    min-height: 0vw;
+    font-size: clamp(4rem, -1.0000rem + 16.0000vw, 9rem);
 }

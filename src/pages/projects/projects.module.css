@@ -17,7 +17,6 @@
 .title {
     margin-top: 1rem;
     margin-left: 2rem;
-    font-size: clamp(4rem, -1.0000rem + 16.0000vw, 9rem);
 }
 
 .projects {
@@ -38,8 +37,6 @@
 .project-title {
     display: flex;
     background-color: var(--smit-black);
-    font-size: clamp(var(--smit-l)/2, 6.4vw, var(--smit-l));
-    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
 }
 
 .project-name {
@@ -71,10 +68,6 @@
     display: flex;
 }
 
-.project-content-header {
-
-}
-
 .project-content-links {
     color: var(--smit-white);
 }
@@ -84,25 +77,6 @@
     padding: 0.5rem 0;
 }
 
-.project-content-footer {
-}
-
-.xxs {
-    font-size: clamp(var(--smit-xxs)/2, 1.6vw, var(--smit-xxs));
-}
-
-.xs {
-    font-size: clamp(var(--smit-xs)/2, 2vw, var(--smit-xs));
-}
-
-.l {
-    font-size: clamp(var(--smit-l)/2, 6.4vw, var(--smit-l));
-    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
-}
-
-.xxl {
-    font-size: clamp(4rem, -1.0000rem + 16.0000vw, 9rem);
-}
 
 @media only screen and (max-width: 1300px) {
     

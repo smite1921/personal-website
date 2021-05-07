@@ -42,32 +42,6 @@
     color: var(--smit-background);
 }
 
-.xs {
-    font-size: var(--smit-xs);
-}
-
-.s {
-    font-size: var(--smit-s);
-}
-
-.m {
-    font-size: var(--smit-m);
-}
-
-.l {
-    font-size: var(--smit-l);
-    line-height: calc(var(--smit-l) - 0.5rem);
-}
-
-.xl {
-    font-size: var(--smit-xl);
-    line-height: calc(var(--smit-xl) - 2rem);
-}
-
-.xxl {
-    font-size: var(--smit-xxl);
-}
-
 .calmed {
     font-family: "calibre-medium",sans-serif;
 }

@@ -7,11 +7,11 @@ import styles from "./welcome.module.css";
 export default function Welcome() {
     return (
         <div style={{margin:'auto'}}> 
-            <div className={styles.s}>
+            <div className='s'>
                 <Header title='hello world! my name is' color={COLOR.WHITE} font={FONT.MONO}/>
             </div>
 
-            <div className={styles.xl}>
+            <div className='cal-xl'>
                 <div className={styles.name}>
                     <Header title='"' color={COLOR.WHITE} font={FONT.CAL_SEMIBOLD_I}/>
                 </div>
@@ -51,12 +51,12 @@ export default function Welcome() {
 
             </div>
 
-            <div className={styles.l}>
+            <div className='cal-l'>
                 <Header title='toronto canada' color={COLOR.BLUE} font={FONT.CAL_MED}/>
                 <Header title='software developer' color={COLOR.PINK} font={FONT.CAL_MED}/>
             </div>
 
-            <div className={`${styles.textbox} ${styles.xs}`}>
+            <div className={`${styles.textbox} xs`}>
                 <Header title='/*' color={COLOR.GREEN}  font={FONT.AVENIR_BOOK}/>
                 <Header title='I am currently a student studying computer science and physics at the University of Toronto.
                                 I am in my third year and I expect to graduate in the summer of 2022. I have had
@@ -66,7 +66,7 @@ export default function Welcome() {
                 <Header title='*/' color={COLOR.GREEN} font={FONT.AVENIR_BOOK}/>
             </div>
             
-            <div className={styles.m}>
+            <div className='m'>
                 <Button text='resume' link='/resume.pdf'/>
             </div>
 

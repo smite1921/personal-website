@@ -1,7 +1,6 @@
 import React from "react";
 import HeaderUnderline from "../header_underline/header_underline";
 import SmitLogo from "../logos/smit_logo";
-import Ham from "./ham";
 import Sidebar from "../sidebar/sidebar"
 import styles from "./nav.module.css";
 import {COLOR} from "../../styles/constants";
@@ -22,7 +21,7 @@ export default function Nav() {
 
         </span>
 
-        <span className={styles.sectionContainer}>
+        <span className={`${styles.sectionContainer} m`}>
             <HeaderUnderline title='home' color={COLOR.BLUE} link='home'/>
             <HeaderUnderline title='experience' color={COLOR.YELLOW} link='experience'/>
             <HeaderUnderline title='projects' color={COLOR.PURPLE} link='project'/>

@@ -11,8 +11,6 @@
     .sidebar {
         height: 100vh;
         background-color: var(--smit-black);
-        font-size: clamp(var(--smit-l)/2, 6.4vw, var(--smit-l));
-        line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
         position: fixed;
         top: 0;
         right: 0;

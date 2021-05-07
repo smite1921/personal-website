@@ -12,14 +12,6 @@ export const COLOR = {
     BACKGROUND: 9
 };
 
-export const SIZE = {
-    XS: 0,
-    S: 1,
-    M: 2,
-    L:3,
-    XL: 4
-};
-
 export const FONT = {
     CAL_MED: 1,
     CAL_SEMIBOLD_I: 2,

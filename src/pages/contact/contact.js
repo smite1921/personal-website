@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Nav from "../../components/nav/nav";
 import Social from "../../components/social/social";
 import Header from "../../components/header/header";
@@ -165,11 +165,11 @@ export default function Contact() {
 
           <div className={styles.mobile}>
 
-            <div className={styles.title}>
+            <div className={`${styles.title} cal-l`}>
               <Header title='contact' color={COLOR.WHITE} font={FONT.CAL_MED}/>
             </div>
 
-            <div className={styles.body}>
+            <div className={`${styles.body} m`}>
               <Header title='location: toronto, canada' color={COLOR.WHITE} font={FONT.AVENIR_MED}/>
               <Header title='email: smitp505@gmail.com' color={COLOR.WHITE} font={FONT.AVENIR_MED}/>
             </div>
@@ -181,9 +181,11 @@ export default function Contact() {
         </div>
 
         <div className={styles.footer}>
+          <div className='xs'>
             <Header title={`this website was designed and made by smit patel.`} font={FONT.MONO} color={COLOR.WHITE}/> 
             <Header title='credits' link='/credits' font={FONT.MONO} color={COLOR.WHITE}/> 
-          </div>          
+          </div>
+        </div>          
 
       </div>
     );

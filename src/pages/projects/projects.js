@@ -11,7 +11,7 @@ function ProjectSection({name,logo,linkName,link,github,platform,description,tec
   return(
       <div className={styles.projectSection}>
                 
-        <div className={styles.projectTitle}>
+        <div className={`${styles.projectTitle} cal-l`}>
             
           <div className={styles.projectName}>
             <Header title={name} color={COLOR.WHITE} font={FONT.CAL_MED}/>
@@ -23,7 +23,7 @@ function ProjectSection({name,logo,linkName,link,github,platform,description,tec
 
         </div>
 
-        <div className={`${styles.projectContent} ${styles.xxs}`}>
+        <div className={`${styles.projectContent} xxs`}>
           <div className={styles.projectContentHeader}>
             <div className={styles.projectContentPlatform}>
               <b><Header title="Platform" font={FONT.MONO} color={COLOR.WHITE}/></b> 
@@ -62,7 +62,7 @@ export default function Project() {
           <Nav/>
         </div>
 
-        <div className={styles.title}>
+        <div className={`${styles.title} xxl`}>
           <Header title='projects' color={COLOR.WHITE} font={FONT.CAL_MED}/>
         </div>
 

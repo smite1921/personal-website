@@ -9,10 +9,10 @@ export default function NotFound() {
       <div id='not-found' className={styles.container}>
 
         <div className={styles.block}>
-            <div className={styles.title}>
+            <div className='xxl'>
                 <Header title='404' color={COLOR.WHITE} font={FONT.CAL_MED}/>
             </div>
-            <div className={styles.text}>
+            <div className='cal-l'>
                 <Header title='page not found' color={COLOR.WHITE} font={FONT.CAL_MED}/>
                 <div className={styles.link}>
                     <HeaderUnderline flag={true} title='back to homepage' color={COLOR.GREEN} link='/'/>

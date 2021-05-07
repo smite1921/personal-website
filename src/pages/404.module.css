@@ -9,15 +9,6 @@
     text-align: center;
 }
 
-.title {
-    font-size: clamp(4rem, -1.0000rem + 16.0000vw, 9rem);
-}
-
-.text {
-    font-size: clamp(var(--smit-l)/2, 6.4vw, var(--smit-l));
-    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
-}
-
 .link {
     padding: 1rem 0;
 }

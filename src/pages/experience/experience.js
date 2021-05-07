@@ -82,12 +82,12 @@ export default function Experience() {
 
             <div className={styles.textContainer}>
 
-              <div className={styles.l}>
+              <div className='cal-l'>
                 <Header title='about me' color={COLOR.BLACK} font={FONT.CAL_MED}/>
               </div>
 
 
-              <div className={styles.skillsTextbox}>
+              <div className='xs'>
                 <Header title='My passion for software development started in high school when I 
                               took my first computer programming course. Since then, I have
                               explored various areas in the field through internships and personal
@@ -122,7 +122,7 @@ export default function Experience() {
 
         <div className={styles.experience}>
           <div className={styles.experienceTitle}>
-            <div className={styles.l}>
+            <div className='cal-l'>
               <Header title='experience' color={COLOR.BLACK} font={FONT.CAL_MED}/>
             </div>
           </div>
@@ -136,11 +136,11 @@ export default function Experience() {
             </div>
 
             <div className={styles.experienceBoxHistory}>
-              <div className={`${styles.l} ${styles.experienceBoxTitle}`}>
+              <div className={`${styles.experienceBoxTitle} cal-l`}>
                 <Header title='HISTORY' color={COLOR.YELLOW} font={FONT.CAL_MED}/>
               </div>
         
-              <ul style={{paddingInlineStart:'2rem'}} className={`${styles.xs} ${styles.experienceBoxList}`}>
+              <ul style={{paddingInlineStart:'2rem'}} className={`${styles.experienceBoxList} xs`}>
                 <li onClick={() => setActiveIndex(0)} onMouseOver={() => hover(0)} onMouseLeave={() => setHoverIndex(-1)} style={{color:`${color0}`, transition:'color 0.1s'}}>
                    <Header title='University of Toronto' font={FONT.MONO}/> 
                 </li>
@@ -153,7 +153,7 @@ export default function Experience() {
               </ul>
             </div>
 
-            <div className={`${styles.experienceBoxInfo} ${styles.xs}`}>
+            <div className={`${styles.experienceBoxInfo} xs`}>
                 <Header title={historyData[activeIndex].general} color={COLOR.WHITE} font={FONT.MONO}/>
                 <Header title={historyData[activeIndex].date} color={COLOR.WHITE} font={FONT.MONO}/>
                 <Header title='' color={COLOR.WHITE} font={FONT.MONO}/>

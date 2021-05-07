@@ -28,10 +28,6 @@
     margin-left: 2rem;
 }
 
-.skills-textbox {
-    font-size: clamp(var(--smit-xs)/2, 2vw, var(--smit-xs));
-}
-
 .bullet {
     display: flex;
     justify-content: flex-start;
@@ -45,15 +41,6 @@
 .bulletRight {
     padding: 2rem;
     padding-top: 1rem;
-}
-
-.l {
-    font-size: clamp(var(--smit-l)/2, 6.4vw, var(--smit-l));
-    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
-}
-
-.xs {
-    font-size: clamp(var(--smit-xs)/2, 2vw, var(--smit-xs));
 }
 
 .skills-image {
