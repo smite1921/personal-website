@@ -13,6 +13,7 @@
     grid-row-end: 10;
     border-left: 0.25px solid #efedec;
     border-bottom: 0.25px solid #efedec;
+    cursor: pointer;
 }
 
 .it {
@@ -22,6 +23,7 @@
     grid-column-end: 14;
     border-left: 0.25px solid #efedec;
     border-bottom: 0.25px solid #efedec;
+    cursor: pointer;
 }
 
 .sw {
@@ -31,6 +33,7 @@
     grid-column-end: 10;
     border-left: 0.25px solid #efedec;
     border-bottom: 0.25px solid #efedec;
+    cursor: pointer;
 }
 
 .dates {
