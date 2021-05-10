@@ -3,7 +3,7 @@ import Header from "../header/header";
 import styles from "./timeline.module.css";
 import {COLOR, FONT} from "../../styles/constants";
 
-export default function Timeline({activeIndex, hoverIndex}) {
+export default function Timeline({activeIndex, hoverIndex, setHover, setActive, hover}) {
     const array = Array.from(Array(170).keys());
     const grid = array.map(index => {
         if (index === 21) {
@@ -59,13 +59,25 @@ export default function Timeline({activeIndex, hoverIndex}) {
     
                     {grid}
 
-                    <div style={{backgroundColor:`${color0}`, transition:'background-color 0.2s'}} className={styles.school}>
+                    <div 
+                      style={{backgroundColor:`${color0}`, transition:'background-color 0.2s'}} className={styles.school} 
+                      onClick={() => setActive(0)} 
+                      onMouseOver={() => hover(0)} 
+                      onMouseLeave={() => setHover(-1)}>
                     </div>
                     
-                    <div style={{backgroundColor:`${color1}`,transition:'background-color 0.2s'}} className={styles.sw}>
+                    <div 
+                      style={{backgroundColor:`${color1}`,transition:'background-color 0.2s'}} className={styles.sw}
+                      onClick={() => setActive(1)} 
+                      onMouseOver={() => hover(1)} 
+                      onMouseLeave={() => setHover(-1)}>
                     </div>
 
-                    <div style={{backgroundColor:`${color2}`, transition:'background-color 0.2s'}} className={styles.it}>
+                    <div 
+                      style={{backgroundColor:`${color2}`, transition:'background-color 0.2s'}} className={styles.it}
+                      onClick={() => setActive(2)} 
+                      onMouseOver={() => hover(2)} 
+                      onMouseLeave={() => setHover(-1)}>
                     </div> 
                 
                 </div>
