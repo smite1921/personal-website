@@ -1,3 +1,3 @@
 
-LINK: https://smitpatel.gtsb.io/
+LINK: https://smitpatel.gatsbyjs.io/
 
