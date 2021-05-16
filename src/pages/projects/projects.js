@@ -80,7 +80,7 @@ export default function Project() {
           <ProjectSection 
             name='personal website' 
             logo={<TagLogo/>}
-            link='https://smitpatel.gtsb.io/'
+            link='https://www.smitpatel.me/'
             github='https://github.com/smite1921/personal-website'
             platform='Web'
             description='A website to display my skills, experience, and personal projects (this is the website you currently are on).'

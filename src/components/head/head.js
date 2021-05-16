@@ -11,17 +11,17 @@ export default function Head() {
         
             {/* <!-- Open Graph / Facebook --> */}
             <meta property="og:type" content="website"/>
-            <meta property="og:url" content="https://smitpatel.gtsb.io/"/>
+            <meta property="og:url" content="https://www.smitpatel.me/"/>
             <meta property="og:title" content="Smit Patel - Software Engineer "/>
             <meta property="og:description" content="Hello world! My name is Smit Patel and I am currently a student studying computer science and physics at the University of Toronto. I am in my third year and I expect to graduate in the summer of 2022.  At the moment I am currently seeking internships for Fall 2021."/>
-            <meta property="og:image" content="https://smitpatel.gtsb.io/meta-preview.png"/>
+            <meta property="og:image" content="https://www.smitpatel.me/meta-preview.png"/>
         
             {/* <!-- Twitter --> */}
             <meta property="twitter:card" content="summary_large_image"/>
-            <meta property="twitter:url" content="https://smitpatel.gtsb.io/"/>
+            <meta property="twitter:url" content="https://www.smitpatel.me/"/>
             <meta property="twitter:title" content="Smit Patel - Software Engineer "/>
             <meta property="twitter:description" content="Hello world! My name is Smit Patel and I am currently a student studying computer science and physics at the University of Toronto. I am in my third year and I expect to graduate in the summer of 2022.  At the moment I am currently seeking internships for Fall 2021."/>
-            <meta property="twitter:image" content="https://smitpatel.gtsb.io/meta-preview.png"/>
+            <meta property="twitter:image" content="https://www.smitpatel.me/meta-preview.png"/>
             
             {/* <!-- Favicomatic --> */}
             <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
