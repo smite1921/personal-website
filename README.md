@@ -1,3 +1,3 @@
 
-LINK: https://smitpatel.gatsbyjs.io/
+LINK: https://www.smitpatel.me/
 
