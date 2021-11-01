@@ -6,6 +6,7 @@ import Timeline from "../../components/timeline/timeline";
 import styles from "./experience.module.css";
 import { useResizeDetector } from 'react-resize-detector';
 import {COLOR, FONT} from "../../styles/constants";
+import "animate.css";
 
 function CompanySection({ role, roleTitle='Role', department, departmentTitle='Department', duration, notes}) {
   return(
@@ -195,6 +196,8 @@ export default function Experience() {
               <Header title='experience' color={COLOR.BLACK} font={FONT.CAL_MED}/>
             </div>
           </div>
+
+
 
           <div className={styles.experienceBox}>
 

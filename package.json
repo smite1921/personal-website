@@ -15,10 +15,12 @@
     "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "gatsby": "^2.26.1",
     "gatsby-plugin-manifest": "^3.4.0",
     "gatsby-plugin-react-helmet": "^4.5.0",
     "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-resize-detector": "^6.7.1",

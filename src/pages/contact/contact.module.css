@@ -6,6 +6,10 @@
     overflow: hidden;
 }
 
+.heli {
+    fill: aqua;
+}
+
 .mobile {
     display: none;
 }

@@ -2,6 +2,9 @@ import React from "react";
 import Nav from "../../components/nav/nav";
 import Welcome from "../../components/welcome/welcome";
 import styles from "./home.module.css";
+import "animate.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 export default function Home() {
     return (
@@ -11,12 +14,16 @@ export default function Home() {
           <Nav/>
         </div>
   
-        <div className={styles.home}>
+        <div className={`${styles.home}`}>
           <div className={styles.text}>
             
-            <span className={styles.welcome}>
-              <Welcome/>
+
+          <ScrollAnimation duration='1.5' style={{display:'flex', flexGrow:1}} animateOnce={true} animateIn='animate__fadeInLeft'>
+            <span className={`${styles.welcome}`}>
+                <Welcome/>
             </span>
+          </ScrollAnimation>
+
                         
           </div>
 

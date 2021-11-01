@@ -6,6 +6,8 @@ import TagLogo from "../../components/logos/tag_logo";
 import MazeLogo from "../../components/logos/maze_logo";
 import styles from "./projects.module.css";
 import {COLOR, FONT} from "../../styles/constants";
+import "animate.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function ProjectSection({ name, logo, link, github, platform, description, tech }) {
   return(
@@ -66,37 +68,39 @@ export default function Project() {
           <Header title='projects' color={COLOR.WHITE} font={FONT.CAL_MED}/>
         </div>
 
+        <ScrollAnimation style={{display:'flex', flexGrow:1}} duration='1.5' delay='1.5' animateOnce={true} animateIn='animate__slideInUp'>
           <div className={styles.projects}>
       
-          <ProjectSection 
-            name='enigma machine' 
-            logo={<AndroidLogo/>} 
-            link='https://play.google.com/store/apps/details?id=com.smitpatel.enigmamachine' 
-            github='https://github.com/smite1921/enigma_machine' 
-            platform='Android (Mobile)' 
-            description='The Enigma Machine is a physical cryptographic device that was used extensively by the German military during World War II. I made an android app simulating the M3 version of the machine.' 
-            tech='Java, Android, Adobe Illustrator'/>
+            <ProjectSection 
+              name='enigma machine' 
+              logo={<AndroidLogo/>} 
+              link='https://play.google.com/store/apps/details?id=com.smitpatel.enigmamachine' 
+              github='https://github.com/smite1921/enigma_machine' 
+              platform='Android (Mobile)' 
+              description='The Enigma Machine is a physical cryptographic device that was used extensively by the German military during World War II. I made an android app simulating the M3 version of the machine.' 
+              tech='Java, Android, Adobe Illustrator'/>
+            
+            <ProjectSection 
+              name='maze generators' 
+              logo={<MazeLogo/>}
+              link='https://mazegenerators.gatsbyjs.io/'
+              github='https://github.com/smite1921/maze-generators'
+              platform='Website'
+              description='A website to showcase popular maze generation algorithms.' 
+              tech='HTML, CSS, JavaScript, React, Gatsby' />
 
-          <ProjectSection 
-            name='personal website' 
-            logo={<TagLogo/>}
-            link='https://www.smitpatel.me/'
-            github='https://github.com/smite1921/personal-website'
-            platform='Web'
-            description='A website to display my skills, experience, and personal projects (this is the website you currently are on).'
-            tech='HTML, CSS, JavaScript, React, Gatsby, Adobe Illustrator'/>
+            <ProjectSection 
+              name='african impact' 
+              logo={<TagLogo/>}
+              link='/soon'
+              github='https://github.com/smite1921/african-impact-challenge'
+              platform='Web Application (Jamstack)'
+              description='This project is a web application that provides a platform for participants in the African Impact Challenge. Participants will be able to use the platform to communicate with their peers, and access e-learning resources. The application was made so that participants have an integrated experience between the e-learning and community aspects of the African Impact Challenge.'
+              tech='HTML, CSS, JavaScript, React, Firebase, NodeJS'/>
 
-          <ProjectSection 
-            name='maze solvers' 
-            logo={<MazeLogo/>}
-            linkName='Coming Soon ...'
-            link='/soon'
-            github='/soon'
-            platform='Web (In Progress)'
-            description='A website to showcase various maze generation and maze solving algorithms.' 
-            tech='HTML, CSS, JavaScript' />
+          </div>
+        </ScrollAnimation>
 
-        </div>
 
       <div className={styles.navBottom}>
         <Nav/>

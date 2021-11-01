@@ -13,7 +13,7 @@ export default function Welcome() {
 
             <div className='cal-xl'>
                 <div className={styles.name}>
-                    <Header title='"' color={COLOR.WHITE} font={FONT.CAL_SEMIBOLD_I}/>
+                    <Header title='"' color={COLOR.WHITE} font={FONT.CAL_SEMIBOLD_I} />
                 </div>
                 <div className={styles.name}>
                     <Header title='S' color={COLOR.YELLOW} font={FONT.CAL_SEMIBOLD_I}/>
@@ -59,9 +59,9 @@ export default function Welcome() {
             <div className={`${styles.textbox} xs`}>
                 <Header title='/*' color={COLOR.GREEN}  font={FONT.AVENIR_BOOK}/>
                 <Header title='I am currently a student studying computer science and physics at the University of Toronto.
-                                I am in my third year and I expect to graduate in the summer of 2022. I have had
+                                I am in my final year and I expect to graduate in the summer of 2022. I have had
                                 experience as an Infotainment Android Developer at General Motors from May 2019 - December 2020.
-                                At the moment I am currently seeking internships for Fall 2021.' 
+                                At the moment I am currently seeking new grad opportunities for Summer 2022.' 
                 color={COLOR.GREEN} font={FONT.AVENIR_BOOK}/>
                 <Header title='*/' color={COLOR.GREEN} font={FONT.AVENIR_BOOK}/>
             </div>
