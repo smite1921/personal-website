@@ -61,7 +61,7 @@ export default function Welcome() {
                 <Header title='I am currently a student studying computer science and physics at the University of Toronto.
                                 I am in my final year and I expect to graduate in the summer of 2022. I have had
                                 experience as an Infotainment Android Developer at General Motors from May 2019 - December 2020.
-                                At the moment I am currently seeking new grad opportunities for Summer 2022.' 
+                                At the moment I am currently seeking new grad opportunities for fall 2022.' 
                 color={COLOR.GREEN} font={FONT.AVENIR_BOOK}/>
                 <Header title='*/' color={COLOR.GREEN} font={FONT.AVENIR_BOOK}/>
             </div>
