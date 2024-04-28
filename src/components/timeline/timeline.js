@@ -1,136 +1,173 @@
-import React from "react";
-import Header from "../header/header";
-import styles from "./timeline.module.css";
-import {COLOR, FONT} from "../../styles/constants";
+import React from "react"
+import Header from "../header/header"
+import styles from "./timeline.module.css"
+import { COLOR, FONT } from "../../styles/constants"
 
-export default function Timeline({activeIndex, hoverIndex, setHover, setActive, hover}) {
-    const array = Array.from(Array(170).keys());
-    const grid = array.map(index => {
-        if (index === 21) {
-            return <div key={index} style={{border:'0.25px solid #efedec'}}></div>;
-        }
-        else if ([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].includes(index)) {
-            return <div key={index} style={{borderLeft:'0.25px solid #efedec',borderTop:'0.25px solid #efedec',borderBottom:'0.25px solid #efedec'}}></div>;
-        }
-        else if ([41,61,83,102,121,143,145,147,169].includes(index)) {
-            return <div key={index} style={{borderLeft:'0.25px solid #efedec',borderRight:'0.25px solid #efedec',borderBottom:'0.25px solid #efedec'}}></div>;
-        }
-        return <div key={index} style={{borderLeft:'0.25px solid #efedec',borderBottom:'0.25px solid #efedec'}}></div>;
-    })
-    let color0 = '#b8b8b6';
-    let color1 = '#b8b8b6';
-    let color2 = '#b8b8b6';
-    
-    switch (hoverIndex) {
-      case -1:
-        break;
-      case 0:
-        color0 = '#efedec';
-        break;
-      case 1:
-        color1 = '#efedec';
-        break;
-      case 2:
-        color2 = '#efedec';
-        break;
-      default:
-        break;
+export default function Timeline({
+  activeIndex,
+  hoverIndex,
+  setHover,
+  setActive,
+  hover,
+}) {
+  const array = Array.from(Array(222).keys())
+  const grid = array.map(index => {
+    // top right corner
+    if (index === 21) {
+      return <div key={index} style={{ border: "0.25px solid #efedec" }}></div>
+      // top row minus top right corner
+    } else if (
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+      ].includes(index)
+    ) {
+      return (
+        <div
+          key={index}
+          style={{
+            borderLeft: "0.25px solid #efedec",
+            borderTop: "0.25px solid #efedec",
+            borderBottom: "0.25px solid #efedec",
+          }}
+        ></div>
+      )
+      // right edge
+    } else if (
+      [41, 63, 82, 104, 124, 146, 167, 189, 199, 221].includes(index)
+    ) {
+      return (
+        <div
+          key={index}
+          style={{
+            borderBottom: "0.25px solid  #efedec",
+            borderLeft: "0.25px solid  #efedec",
+            borderRight: "0.25px solid  #efedec",
+          }}
+        ></div>
+      )
     }
-
-    switch (activeIndex) {
-      case 0:
-        color0 = '#ecc20f';
-        break;
-      case 1:
-        color1 = '#ecc20f';
-        break;
-      case 2:
-        color2 = '#ecc20f';
-        break;
-      default:
-        break;
-    }
-
-
+    // remaining boxes
     return (
-            <div style={{height:'100%'}}>
+      <div
+        key={index}
+        style={{
+          borderLeft: "0.25px solid #efedec",
+          borderBottom: "0.25px solid #efedec",
+        }}
+      ></div>
+    )
+  })
 
-                <div className={styles.timeline}>
-    
-                    {grid}
+  const colors = ["#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6"]
 
-                    <div 
-                      style={{backgroundColor:`${color0}`, transition:'background-color 0.2s'}} className={styles.school} 
-                      onClick={() => setActive(0)} 
-                      onMouseOver={() => hover(0)} 
-                      onMouseLeave={() => setHover(-1)}>
-                    </div>
-                    
-                    <div 
-                      style={{backgroundColor:`${color1}`,transition:'background-color 0.2s'}} className={styles.sw}
-                      onClick={() => setActive(1)} 
-                      onMouseOver={() => hover(1)} 
-                      onMouseLeave={() => setHover(-1)}>
-                    </div>
+  // Update colors based on hoverIndex and activeIndex
+  if (hoverIndex !== -1) {
+    colors[hoverIndex] = "#efedec"
+  }
 
-                    <div 
-                      style={{backgroundColor:`${color2}`, transition:'background-color 0.2s'}} className={styles.it}
-                      onClick={() => setActive(2)} 
-                      onMouseOver={() => hover(2)} 
-                      onMouseLeave={() => setHover(-1)}>
-                    </div> 
-                
-                </div>
+  if (activeIndex !== -1) {
+    colors[activeIndex] = "#ecc20f"
+  }
 
-              <div className={styles.dates}>
+  const startYear = 2017
+  const endYear = 2027
+  const years = Array.from(
+    { length: endYear - startYear + 1 },
+    (_, index) => startYear + index
+  )
 
+  return (
+    <div style={{ height: "100%" }}>
+      <div className={styles.timeline}>
+        {grid}
 
-                <div style={{flexGrow:'1'}}>
-                  <Header title='2017' color={COLOR.WHITE} font={FONT.MONO}/>
-                </div>
+        <div
+          style={{
+            backgroundColor: `${colors[4]}`,
+            transition: "background-color 0.2s",
+          }}
+          className={styles.shopifyFt}
+          onClick={() => setActive(4)}
+          onMouseOver={() => hover(4)}
+          onMouseLeave={() => setHover(-1)}
+        />
 
-                <div style={{flexGrow:'1'}}>
-                  <Header title='____' color={COLOR.BACKGROUND} font={FONT.MONO}/>
-                </div>
+        <div
+          style={{
+            backgroundColor: `${colors[3]}`,
+            transition: "background-color 0.2s",
+          }}
+          className={styles.shopifyIntern}
+          onClick={() => setActive(3)}
+          onMouseOver={() => hover(3)}
+          onMouseLeave={() => setHover(-1)}
+        />
 
-                <div style={{flexGrow:'1'}}>
-                  <Header title='2018' color={COLOR.WHITE} font={FONT.MONO}/>
-                </div>
+        <div
+          style={{
+            backgroundColor: `${colors[2]}`,
+            transition: "background-color 0.2s",
+          }}
+          className={styles.gmInfo}
+          onClick={() => setActive(2)}
+          onMouseOver={() => hover(2)}
+          onMouseLeave={() => setHover(-1)}
+        />
 
-                <div style={{flexGrow:'1'}}>
-                  <Header title='____' color={COLOR.BACKGROUND} font={FONT.MONO}/>
-                </div>
+        <div
+          style={{
+            backgroundColor: `${colors[1]}`,
+            transition: "background-color 0.2s",
+          }}
+          className={styles.gmIt}
+          onClick={() => setActive(1)}
+          onMouseOver={() => hover(1)}
+          onMouseLeave={() => setHover(-1)}
+        />
 
-                <div style={{ flexGrow:'1'}}>
-                  <Header title='2019' color={COLOR.WHITE} font={FONT.MONO}/>
-                </div>
+        <div
+          style={{
+            backgroundColor: `${colors[0]}`,
+            transition: "background-color 0.2s",
+          }}
+          className={styles.school}
+          onClick={() => setActive(0)}
+          onMouseOver={() => hover(0)}
+          onMouseLeave={() => setHover(-1)}
+        />
+      </div>
 
-                <div style={{flexGrow:'1'}}>
-                  <Header title='____' color={COLOR.BACKGROUND} font={FONT.MONO}/>
-                </div>
-                
-                <div style={{flexGrow:'1'}}>
-                  <Header title='2020' color={COLOR.WHITE} font={FONT.MONO}/>
-                </div>
-
-                <div style={{flexGrow:'1'}}>
-                  <Header title='____' color={COLOR.BACKGROUND} font={FONT.MONO}/>
-                </div>
-
-                <div style={{flexGrow:'1'}}>
-                  <Header title='2021' color={COLOR.WHITE} font={FONT.MONO}/>
-                </div>
-
-                <div style={{flexGrow:'1'}}>
-                  <Header title='____' color={COLOR.BACKGROUND} font={FONT.MONO}/>
-                </div>
-
-                <div style={{flexGrow:'1'}}>
-                  <Header title='2022' color={COLOR.WHITE} font={FONT.MONO}/>
-                </div>
-                
-              </div>
-            </div>
-
-    );
+      <div className={styles.dates}>
+        {years.map(year => (
+          <div key={year} style={{ flexGrow: "1" }}>
+            <Header
+              title={year.toString()}
+              color={COLOR.WHITE}
+              font={FONT.MONO}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  )
 }

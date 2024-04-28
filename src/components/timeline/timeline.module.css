@@ -1,43 +1,63 @@
-.timeline{
-    display: grid;
-    grid-template-rows: repeat(10,1fr);
-    grid-template-columns: repeat(22, 1fr);
-    width: 100%;
-    height: 100%;
+.timeline {
+  display: grid;
+  grid-template-rows: repeat(11, 1fr);
+  grid-template-columns: repeat(22, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.shopify-ft {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 15;
+  grid-column-end: 17;
+  border-left: 0.25px solid #efedec;
+  border-bottom: 0.25px solid #efedec;
+  cursor: pointer;
+}
+
+.shopify-intern {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 12;
+  grid-column-end: 15;
+  border-left: 0.25px solid #efedec;
+  border-bottom: 0.25px solid #efedec;
+  cursor: pointer;
+}
+
+.gm-info {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  border-left: 0.25px solid #efedec;
+  border-bottom: 0.25px solid #efedec;
+  cursor: pointer;
+}
+
+.gm-it {
+  grid-row-start: 8;
+  grid-row-end: 9;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  border-left: 0.25px solid #efedec;
+  border-bottom: 0.25px solid #efedec;
+  cursor: pointer;
 }
 
 .school {
-    grid-column-start: 2;
-    grid-column-end: 22;
-    grid-row-start: 8;
-    grid-row-end: 10;
-    border-left: 0.25px solid #efedec;
-    border-bottom: 0.25px solid #efedec;
-    cursor: pointer;
-}
-
-.it {
-    grid-row-start: 5;
-    grid-row-end: 7;
-    grid-column-start: 11;
-    grid-column-end: 14;
-    border-left: 0.25px solid #efedec;
-    border-bottom: 0.25px solid #efedec;
-    cursor: pointer;
-}
-
-.sw {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 8;
-    grid-column-end: 10;
-    border-left: 0.25px solid #efedec;
-    border-bottom: 0.25px solid #efedec;
-    cursor: pointer;
+  grid-column-start: 3;
+  grid-column-end: 15;
+  grid-row-start: 10;
+  grid-row-end: 11;
+  border-left: 0.25px solid #efedec;
+  border-bottom: 0.25px solid #efedec;
+  cursor: pointer;
 }
 
 .dates {
-    width: 100%;
-    text-align: center;
-    display: flex;
+  width: 100%;
+  text-align: center;
+  display: flex;
 }
