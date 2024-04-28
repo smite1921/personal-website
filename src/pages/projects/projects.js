@@ -71,6 +71,7 @@ function ProjectSection({
                   link={github}
                 />
               </li>
+              {link === undefined && <br />}
             </ul>
           </div>
         </div>

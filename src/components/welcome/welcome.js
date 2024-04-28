@@ -68,12 +68,20 @@ export default function Welcome() {
       </div>
 
       <div className={`${styles.textbox} xs`}>
-        <Header title="/**" color={COLOR.GREEN} font={FONT.AVENIR_BOOK} />
-        <Header
-          title="Welcome to my website! I'm excited to share that I'm a Mobile Developer at Shopify, driving innovation in e-commerce. Armed with a degree in computer science and physics from the University of Toronto, I thrive on innovation and problem-solving. I'm always eager to explore new avenues for personal and professional growth. Let's connect and collaborate!"
-          color={COLOR.GREEN}
-          font={FONT.AVENIR_BOOK}
-        />
+        <Header title="/*" color={COLOR.GREEN} font={FONT.AVENIR_BOOK} />
+
+        <div style={{ display: "flex" }}>
+          <Header
+            title="&nbsp;&nbsp;"
+            color={COLOR.GREEN}
+            font={FONT.AVENIR_BOOK}
+          />
+          <Header
+            title="Welcome to my website! I'm currently a Mobile Developer at Shopify. I have a degree in computer science and physics from the University of Toronto. I'm always eager to explore new avenues for personal and professional growth. Let's connect and collaborate!"
+            color={COLOR.GREEN}
+            font={FONT.AVENIR_BOOK}
+          />
+        </div>
         <Header title="*/" color={COLOR.GREEN} font={FONT.AVENIR_BOOK} />
       </div>
 
