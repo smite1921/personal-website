@@ -65,10 +65,10 @@ function CompanySection({
 }
 
 export default function Experience() {
-  const [activeIndex, setActiveIndex] = useState(4)
+  const [activeIndex, setActiveIndex] = useState(0)
   const [hoverIndex, setHoverIndex] = useState(-1)
   const onResize = useCallback(() => {
-    setActiveIndex(4)
+    setActiveIndex(0)
   }, [])
   const { width, height, ref } = useResizeDetector({ onResize })
 
@@ -83,7 +83,7 @@ export default function Experience() {
       role="Student (undergrad)"
       department="Computer Science & Physics"
       departmentTitle="Program"
-      duration="Sept 2017 - April 2022 (Expected)"
+      duration="Sept 2017 - June 2023"
       notes={
         <ul>
           <li style={{ paddingBottom: "0.5rem" }}>
@@ -145,7 +145,7 @@ export default function Experience() {
     <CompanySection
       name="general motors"
       department="Infotainment - Tuner"
-      role="Android Software Engineer (intern)"
+      role="Software Engineer (intern)"
       duration="May 2019 - Dec 2019"
       notes={
         <ul>
@@ -183,8 +183,8 @@ export default function Experience() {
 
     <CompanySection
       name="shopfiy (intern)"
-      department="Mobile"
-      role="Mobile Developer (intern)"
+      department="Core"
+      role="Software Developer (intern)"
       duration="May 2022 -  June 2023"
       notes={
         <ul>
@@ -220,33 +220,51 @@ export default function Experience() {
       }
     />,
 
-    <CompanySection
-      name="shopfiy"
-      department="Mobile"
-      role="Mobile Developer"
-      duration="June 2023 - Present"
-      notes={
-        <ul>
-          <li style={{ paddingBottom: "0.5rem" }}>
-            <Header
-              title="Part of the Front Office team, which is responsible for the products section of the Shopify mobile app."
-              font={FONT.MONO}
-              color={COLOR.WHITE}
-            />
-          </li>
-          <li style={{ paddingBottom: "0.5rem" }}>
-            <Header
-              title="Technologies Used: Android, iOS, React Native, GraphQL, Splunk, Bugsnag, Observe Analytics."
-              font={FONT.MONO}
-              color={COLOR.WHITE}
-            />
-          </li>
-        </ul>
-      }
-    />,
+      <CompanySection
+        name="shopfiy"
+        department="Core"
+        role="Software Developer"
+        duration="June 2023 - Sept 2025"
+        notes={
+          <ul>
+            <li style={{ paddingBottom: "0.5rem" }}>
+              <Header
+                title="Part of the Front Office team, which is responsible for the products section of the Shopify mobile app."
+                font={FONT.MONO}
+                color={COLOR.WHITE}
+              />
+            </li>
+            <li style={{ paddingBottom: "0.5rem" }}>
+              <Header
+                title="Technologies Used: Android, iOS, React Native, GraphQL, Splunk, Bugsnag, Observe Analytics."
+                font={FONT.MONO}
+                color={COLOR.WHITE}
+              />
+            </li>
+          </ul>
+        }
+      />,
+
+      <CompanySection
+        name="DoorDash"
+        department="Dasher & Logistics"
+        role="Software Engineer"
+        duration="Sept 2025 - Present"
+        notes={
+          <ul>
+            <li style={{ paddingBottom: "0.5rem" }}>
+              <Header 
+                title="Just started—details coming soon!"
+                font={FONT.MONO}
+                color={COLOR.WHITE}
+              />
+            </li>
+          </ul>
+        }
+      />,
   ]
 
-  const colors = ["#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6"]
+  const colors = ["#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6"]
 
   if (hoverIndex !== -1) {
     colors[hoverIndex] = "#efedec"
@@ -390,7 +408,7 @@ export default function Experience() {
                   transition: "color 0.1s",
                 }}
               >
-                <Header title="General Motors - IT" font={FONT.MONO} />
+                <Header title="General Motors: IT Intern" font={FONT.MONO} />
               </li>
               <li
                 onClick={() => setActiveIndex(2)}
@@ -403,7 +421,7 @@ export default function Experience() {
                 }}
               >
                 <Header
-                  title="General Motors - Infotainment"
+                  title="General Motors: Software Intern"
                   font={FONT.MONO}
                 />
               </li>
@@ -417,7 +435,7 @@ export default function Experience() {
                   transition: "color 0.1s",
                 }}
               >
-                <Header title="Shopify - Intern" font={FONT.MONO} />
+                <Header title="Shopify: Software Intern" font={FONT.MONO} />
               </li>
               <li
                 onClick={() => setActiveIndex(4)}
@@ -429,7 +447,19 @@ export default function Experience() {
                   transition: "color 0.1s",
                 }}
               >
-                <Header title="Shopify - Fulltime" font={FONT.MONO} />
+                <Header title="Shopify: Software Developer" font={FONT.MONO} />
+              </li>
+              <li
+                onClick={() => setActiveIndex(5)}
+                onMouseOver={() => hover(5)}
+                onMouseLeave={() => setHoverIndex(-1)}
+                style={{
+                  color: `${colors[5]}`,
+                  cursor: "pointer",
+                  transition: "color 0.1s",
+                }}
+              >
+                <Header title="DoorDash: Software Engineer" font={FONT.MONO} />
               </li>
             </ul>
           </div>

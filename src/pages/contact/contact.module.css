@@ -18,17 +18,13 @@
     -webkit-font-smoothing: antialiased
 }
 
-.image {
-    margin-top: 3rem;
-}
-
 .bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
     background-color: #a83127;
-    padding:1rem;
+    padding:0.5rem;
 }
 
 .nav {

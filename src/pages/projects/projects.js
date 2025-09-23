@@ -16,6 +16,7 @@ function ProjectSection({
   github,
   platform,
   description,
+  highlights,
   tech,
 }) {
   return (
@@ -85,7 +86,25 @@ function ProjectSection({
           </b>
           <Header title={description} font={FONT.MONO} color={COLOR.WHITE} />
         </div>
-        <div className={styles.projectContentFooter}>
+        <div className={styles.projectContentBody}>
+          <b>
+            <Header
+              title="Highlights: "
+              font={FONT.MONO}
+              color={COLOR.WHITE}
+            />
+          </b>
+          <div className={`${styles.projectContentLinks}`}>
+            <ul>
+              {(highlights ?? []).map((highlight, idx) => (
+                <li key={idx}>
+                  <Header title={highlight} font={FONT.MONO} color={COLOR.WHITE} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+          <div className={styles.projectContentFooter}>
           <b>
             <Header
               title="Technologies Used:"
@@ -125,27 +144,33 @@ export default function Project() {
             link="https://play.google.com/store/apps/details?id=com.smitpatel.enigmamachine"
             github="https://github.com/smite1921/enigma_machine"
             platform="Android (Mobile)"
-            description="Originally developed in the early 20th century, the Enigma Machine revolutionized cryptography during World War II. I made an Android app that faithfully recreates this iconic encryption device, allowing you to step into the shoes of codebreakers and experience the challenges they faced."
+            highlights={["45K+ downloads on the Play Store (and growing), with a 4.5 average rating across 260+ reviews", "Fully open-source, with the entire codebase available on GitHub"]}
+            description="Android app that simulates the historic Enigma Machine used in WWII cryptography. Try your hand at codebreaking with this faithful recreation."
             tech="Kotlin, Java, Android, Adobe Illustrator"
+          />
+
+          <ProjectSection
+            name="g1 ready 2025"
+            logo={<TagLogo />}
+            link="https://play.google.com/store/apps/details?id=com.smitpatel.g1app&hl=en_US"
+            github="https://github.com/smite1921/quiz-app"
+            platform="React Native"
+            highlights={["Works offline so users can study anytime, anywhere","1,000+ downloads on the Google Play Store"]}
+            description="G1 Ready 2025 is an Ontario G1 test prep app with real practice questions. Covers road signs, rules, and safety, with offline access."
+            tech="React Native, Expo"
           />
 
           <ProjectSection
             name="maze generators"
             logo={<MazeLogo />}
             github="https://github.com/smite1921/maze-generators"
+            link="https://smitpatel.me/maze-generators/"
             platform="Website"
-            description="I developed a maze generation website using React. It allows users to explore maze creation algorithms through interactive visualizations, providing an engaging experience for maze enthusiasts."
+            highlights={["Users can start, stop, and reset each algorithm, making it easy to see exactly how mazes are constructed and traversed", "Built with React, Gatsby, JavaScript, HTML, and CSS, highlighting strong frontend development skills"]}
+            description="A React website for exploring maze generation algorithms with interactive visualizations."
             tech="React, Gatsby, JavaScript, HTML, CSS"
           />
 
-          <ProjectSection
-            name="quiz app"
-            logo={<TagLogo />}
-            github="https://github.com/smite1921/quiz-app"
-            platform="React Native"
-            description="This is a mobile application I developed using React Native and Expo. The app provides an engaging and interactive quiz experience for users. The app is built to be easily deployable, thanks to Expo's tools and services."
-            tech="React Native, Expo"
-          />
         </div>
       </ScrollAnimation>
 

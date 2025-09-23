@@ -1,24 +1,34 @@
 .timeline {
   display: grid;
-  grid-template-rows: repeat(11, 1fr);
+  grid-template-rows: repeat(13, 1fr);
   grid-template-columns: repeat(22, 1fr);
   width: 100%;
   height: 100%;
 }
 
-.shopify-ft {
+.doordash {
   grid-row-start: 2;
   grid-row-end: 3;
+  grid-column-start: 19;
+  grid-column-end: 20;
+  border-left: 0.25px solid #efedec;
+  border-bottom: 0.25px solid #efedec;
+  cursor: pointer;
+}
+
+.shopify-ft {
+  grid-row-start: 4;
+  grid-row-end: 5;
   grid-column-start: 15;
-  grid-column-end: 17;
+  grid-column-end: 19;
   border-left: 0.25px solid #efedec;
   border-bottom: 0.25px solid #efedec;
   cursor: pointer;
 }
 
 .shopify-intern {
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
   grid-column-start: 12;
   grid-column-end: 15;
   border-left: 0.25px solid #efedec;
@@ -27,8 +37,8 @@
 }
 
 .gm-info {
-  grid-row-start: 6;
-  grid-row-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 9;
   grid-column-start: 6;
   grid-column-end: 8;
   border-left: 0.25px solid #efedec;
@@ -37,8 +47,8 @@
 }
 
 .gm-it {
-  grid-row-start: 8;
-  grid-row-end: 9;
+  grid-row-start: 10;
+  grid-row-end: 11;
   grid-column-start: 5;
   grid-column-end: 6;
   border-left: 0.25px solid #efedec;
@@ -49,8 +59,8 @@
 .school {
   grid-column-start: 3;
   grid-column-end: 15;
-  grid-row-start: 10;
-  grid-row-end: 11;
+  grid-row-start: 12;
+  grid-row-end: 13;
   border-left: 0.25px solid #efedec;
   border-bottom: 0.25px solid #efedec;
   cursor: pointer;
