@@ -59,7 +59,7 @@ export default function Welcome() {
       </div>
 
       <div className="cal-l">
-        <Header title="toronto canada" color={COLOR.BLUE} font={FONT.CAL_MED} />
+        <Header title="san francisco, california" color={COLOR.BLUE} font={FONT.CAL_MED} />
         <Header
           title="software developer"
           color={COLOR.PINK}
@@ -77,7 +77,24 @@ export default function Welcome() {
             font={FONT.AVENIR_BOOK}
           />
           <Header
-            title="Welcome to my website! I'm currently a Mobile Developer at Shopify. I have a degree in computer science and physics from the University of Toronto. I'm always eager to explore new avenues for personal and professional growth. Let's connect and collaborate!"
+            title={
+              <>
+                Welcome to my website! I'm a Software Engineer at DoorDash, formerly at Shopify. I graduated from the University of Toronto with a double major in Computer Science and Physics, and I love building apps such as{" "}
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.smitpatel.enigmamachine"
+                  style={{ color: "inherit", textDecoration: "underline" }}
+                >
+                  Enigma Machine simulator
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.smitpatel.g1app"
+                  style={{ color: "inherit", textDecoration: "underline" }}
+                >
+                  G1 Ready
+                </a>
+              </>
+            }
             color={COLOR.GREEN}
             font={FONT.AVENIR_BOOK}
           />

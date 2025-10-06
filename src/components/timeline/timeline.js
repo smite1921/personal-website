@@ -10,7 +10,7 @@ export default function Timeline({
   setActive,
   hover,
 }) {
-  const array = Array.from(Array(222).keys())
+  const array = Array.from(Array(264).keys())
   const grid = array.map(index => {
     // top right corner
     if (index === 21) {
@@ -53,7 +53,7 @@ export default function Timeline({
       )
       // right edge
     } else if (
-      [41, 63, 82, 104, 124, 146, 167, 189, 199, 221].includes(index)
+      [42, 64, 82, 104, 123,145,165, 187, 208, 230, 240, 262].includes(index)
     ) {
       return (
         <div
@@ -78,7 +78,7 @@ export default function Timeline({
     )
   })
 
-  const colors = ["#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6"]
+  const colors = ["#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6"]
 
   // Update colors based on hoverIndex and activeIndex
   if (hoverIndex !== -1) {
@@ -100,6 +100,17 @@ export default function Timeline({
     <div style={{ height: "100%" }}>
       <div className={styles.timeline}>
         {grid}
+
+        <div
+          style={{
+            backgroundColor: `${colors[5]}`,
+            transition: "background-color 0.2s",
+          }}
+          className={styles.doordash}
+          onClick={() => setActive(5)}
+          onMouseOver={() => hover(5)}
+          onMouseLeave={() => setHover(-1)}
+        />
 
         <div
           style={{
