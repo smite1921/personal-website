@@ -57,7 +57,11 @@ export default function Welcome() {
       </div>
 
       <div className="cal-l">
-        <Header title="san francisco, california" color={COLOR.BLUE} font={FONT.CAL_MED} />
+        <Header
+          title="san francisco, california"
+          color={COLOR.BLUE}
+          font={FONT.CAL_MED}
+        />
         <Header
           title="software developer"
           color={COLOR.PINK}
@@ -77,7 +81,10 @@ export default function Welcome() {
           <Header
             title={
               <>
-                Welcome to my website! I'm a Software Engineer at DoorDash, formerly at Shopify. I graduated from the University of Toronto with a double major in Computer Science and Physics, and I love building apps such as{" "}
+                Welcome to my website! I&apos;m a Software Engineer at DoorDash,
+                formerly at Shopify. I graduated from the University of Toronto
+                with a double major in Computer Science and Physics, and I love
+                building apps such as{" "}
                 <a
                   href="https://play.google.com/store/apps/details?id=com.smitpatel.enigmamachine"
                   style={{ color: "inherit", textDecoration: "underline" }}

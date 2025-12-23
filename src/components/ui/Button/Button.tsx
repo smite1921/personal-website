@@ -1,9 +1,9 @@
-import React from "react";
-import * as styles from "./Button.module.css";
+import React from "react"
+import * as styles from "./Button.module.css"
 
 interface ButtonProps {
-  text: string;
-  link: string;
+  text: string
+  link: string
 }
 
 export default function Button({ text, link }: ButtonProps) {
@@ -12,5 +12,5 @@ export default function Button({ text, link }: ButtonProps) {
       <span data-text={text} className={styles.block} />
       {text}
     </a>
-  );
+  )
 }

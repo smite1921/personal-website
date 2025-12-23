@@ -23,7 +23,7 @@ export default function Home() {
               display: "flex",
               flexGrow: 1,
               animationDuration: "1.5s",
-              opacity: inView ? 1 : 0
+              opacity: inView ? 1 : 0,
             }}
           >
             <span className={`${styles.welcome}`}>

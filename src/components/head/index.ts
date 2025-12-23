@@ -1,2 +1,2 @@
-export { default } from './Head';
-export { default as Head } from './Head';
+export { default } from "./Head"
+export { default as Head } from "./Head"

@@ -3,11 +3,11 @@ import { Header, COLOR, FONT } from "@/components/ui"
 import * as styles from "./Timeline.module.css"
 
 interface TimelineProps {
-  activeIndex: number;
-  hoverIndex: number;
-  setHover: (index: number) => void;
-  setActive: (index: number) => void;
-  hover: (index: number) => void;
+  activeIndex: number
+  hoverIndex: number
+  setHover: (index: number) => void
+  setActive: (index: number) => void
+  hover: (index: number) => void
 }
 
 export default function Timeline({
@@ -25,26 +25,7 @@ export default function Timeline({
       // top row minus top right corner
     } else if (
       [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
         20,
       ].includes(index)
     ) {
@@ -60,7 +41,7 @@ export default function Timeline({
       )
       // right edge
     } else if (
-      [42, 64, 82, 104, 123,145,165, 187, 208, 230, 240, 262].includes(index)
+      [42, 64, 82, 104, 123, 145, 165, 187, 208, 230, 240, 262].includes(index)
     ) {
       return (
         <div
@@ -85,7 +66,14 @@ export default function Timeline({
     )
   })
 
-  const colors = ["#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6"]
+  const colors = [
+    "#b8b8b6",
+    "#b8b8b6",
+    "#b8b8b6",
+    "#b8b8b6",
+    "#b8b8b6",
+    "#b8b8b6",
+  ]
 
   // Update colors based on hoverIndex and activeIndex
   if (hoverIndex !== -1) {
@@ -100,7 +88,7 @@ export default function Timeline({
   const endYear = 2027
   const years = Array.from(
     { length: endYear - startYear + 1 },
-    (_, index) => startYear + index
+    (_, index) => startYear + index,
   )
 
   return (

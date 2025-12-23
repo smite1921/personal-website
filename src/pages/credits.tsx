@@ -44,7 +44,10 @@ export function Head() {
   return (
     <>
       <title>Credits | Smit Patel</title>
-      <meta name="description" content="Credits and attributions for assets used on this website" />
+      <meta
+        name="description"
+        content="Credits and attributions for assets used on this website"
+      />
     </>
-  );
+  )
 }

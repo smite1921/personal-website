@@ -9,9 +9,9 @@ export const COLOR = {
   BLACK: 7,
   WHITE: 8,
   BACKGROUND: 9,
-} as const;
+} as const
 
-export type ColorType = (typeof COLOR)[keyof typeof COLOR];
+export type ColorType = (typeof COLOR)[keyof typeof COLOR]
 
 export const FONT = {
   CAL_MED: 1,
@@ -19,6 +19,6 @@ export const FONT = {
   AVENIR_BOOK: 3,
   AVENIR_MED: 4,
   MONO: 5,
-} as const;
+} as const
 
-export type FontType = (typeof FONT)[keyof typeof FONT];
+export type FontType = (typeof FONT)[keyof typeof FONT]

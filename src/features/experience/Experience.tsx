@@ -69,7 +69,7 @@ export default function Experience() {
   const onResize = useCallback(() => {
     setActiveIndex(0)
   }, [])
-  const { width, height, ref } = useResizeDetector({ onResize })
+  const { width: _width, height, ref } = useResizeDetector({ onResize })
 
   let winWidth = -1
 
@@ -79,6 +79,7 @@ export default function Experience() {
 
   const companyData = [
     <CompanySection
+      key="uoft"
       role="Student (undergrad)"
       department="Computer Science & Physics"
       departmentTitle="Program"
@@ -104,6 +105,7 @@ export default function Experience() {
     />,
 
     <CompanySection
+      key="gm-it"
       role="IT Technician (intern)"
       department="IT - Site Services"
       duration="Sept 2018 - Dec 2018"
@@ -142,6 +144,7 @@ export default function Experience() {
     />,
 
     <CompanySection
+      key="gm-info"
       name="general motors"
       department="Infotainment - Tuner"
       role="Software Engineer (intern)"
@@ -181,6 +184,7 @@ export default function Experience() {
     />,
 
     <CompanySection
+      key="shopify-intern"
       name="shopfiy (intern)"
       department="Core"
       role="Software Developer (intern)"
@@ -219,51 +223,60 @@ export default function Experience() {
       }
     />,
 
-      <CompanySection
-        name="shopfiy"
-        department="Core"
-        role="Software Developer"
-        duration="June 2023 - Sept 2025"
-        notes={
-          <ul>
-            <li style={{ paddingBottom: "0.5rem" }}>
-              <Header
-                title="Part of the Front Office team, which is responsible for the products section of the Shopify mobile app."
-                font={FONT.MONO}
-                color={COLOR.WHITE}
-              />
-            </li>
-            <li style={{ paddingBottom: "0.5rem" }}>
-              <Header
-                title="Technologies Used: Android, iOS, React Native, GraphQL, Splunk, Bugsnag, Observe Analytics."
-                font={FONT.MONO}
-                color={COLOR.WHITE}
-              />
-            </li>
-          </ul>
-        }
-      />,
+    <CompanySection
+      key="shopify-ft"
+      name="shopfiy"
+      department="Core"
+      role="Software Developer"
+      duration="June 2023 - Sept 2025"
+      notes={
+        <ul>
+          <li style={{ paddingBottom: "0.5rem" }}>
+            <Header
+              title="Part of the Front Office team, which is responsible for the products section of the Shopify mobile app."
+              font={FONT.MONO}
+              color={COLOR.WHITE}
+            />
+          </li>
+          <li style={{ paddingBottom: "0.5rem" }}>
+            <Header
+              title="Technologies Used: Android, iOS, React Native, GraphQL, Splunk, Bugsnag, Observe Analytics."
+              font={FONT.MONO}
+              color={COLOR.WHITE}
+            />
+          </li>
+        </ul>
+      }
+    />,
 
-      <CompanySection
-        name="DoorDash"
-        department="Dasher & Logistics"
-        role="Software Engineer"
-        duration="Sept 2025 - Present"
-        notes={
-          <ul>
-            <li style={{ paddingBottom: "0.5rem" }}>
-              <Header 
-                title="Just started—details coming soon!"
-                font={FONT.MONO}
-                color={COLOR.WHITE}
-              />
-            </li>
-          </ul>
-        }
-      />,
+    <CompanySection
+      key="doordash"
+      name="DoorDash"
+      department="Dasher & Logistics"
+      role="Software Engineer"
+      duration="Sept 2025 - Present"
+      notes={
+        <ul>
+          <li style={{ paddingBottom: "0.5rem" }}>
+            <Header
+              title="Just started—details coming soon!"
+              font={FONT.MONO}
+              color={COLOR.WHITE}
+            />
+          </li>
+        </ul>
+      }
+    />,
   ]
 
-  const colors = ["#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6", "#b8b8b6"]
+  const colors = [
+    "#b8b8b6",
+    "#b8b8b6",
+    "#b8b8b6",
+    "#b8b8b6",
+    "#b8b8b6",
+    "#b8b8b6",
+  ]
 
   if (hoverIndex !== -1) {
     colors[hoverIndex] = "#efedec"
@@ -381,10 +394,7 @@ export default function Experience() {
               />
             </div>
 
-            <ul
-              style={{ paddingInlineStart: "2rem" }}
-              className="xs"
-            >
+            <ul style={{ paddingInlineStart: "2rem" }} className="xs">
               <li
                 onClick={() => setActiveIndex(0)}
                 onMouseOver={() => hover(0)}

@@ -1,1 +1,1 @@
-export { default as SFSkyline } from './SFSkyline';
+export { default as SFSkyline } from "./SFSkyline"
