@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import styles from "./sidebar.module.css";
+import * as styles from "./sidebar.module.css";
 import HeaderUnderline from "../header_underline/header_underline";
 import CloseLogo from "../logos/close_logo";
 import {COLOR} from "../../styles/constants";

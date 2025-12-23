@@ -3,7 +3,7 @@ import LinkedinLogo from "../logos/linkedin_logo";
 import GithubLogo from "../logos/github_logo";
 import EmailLogo from "../logos/email_logo";
 import InstagramLogo from "../logos/instagram_logo";
-import styles from "./social.module.css";
+import * as styles from "./social.module.css";
 
 export default function Social() {
 

@@ -3,7 +3,7 @@ import Nav from "../../components/nav/nav";
 import Social from "../../components/social/social";
 import Header from "../../components/header/header";
 import SFSkyline from "../../components/sfskyline/sfskyline";
-import styles from "./contact.module.css";
+import * as styles from "./contact.module.css";
 import {COLOR, FONT} from "../../styles/constants";
 
 export default function Contact() {

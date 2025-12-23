@@ -1,13 +1,13 @@
 import React from "react"
+import { useInView } from "react-intersection-observer"
 import Nav from "../../components/nav/nav"
 import Header from "../../components/header/header"
 import AndroidLogo from "../../components/logos/android_logo"
 import TagLogo from "../../components/logos/tag_logo"
 import MazeLogo from "../../components/logos/maze_logo"
-import styles from "./projects.module.css"
+import * as styles from "./projects.module.css"
 import { COLOR, FONT } from "../../styles/constants"
 import "animate.css"
-import ScrollAnimation from "react-animate-on-scroll"
 
 function ProjectSection({
   name,
@@ -120,6 +120,8 @@ function ProjectSection({
 }
 
 export default function Project() {
+  const { ref, inView } = useInView({ triggerOnce: true })
+
   return (
     <div id="project" className={styles.container}>
       <div className={styles.nav}>
@@ -130,12 +132,16 @@ export default function Project() {
         <Header title="projects" color={COLOR.WHITE} font={FONT.CAL_MED} />
       </div>
 
-      <ScrollAnimation
-        style={{ display: "flex", flexGrow: 1 }}
-        duration="1.5"
-        delay="1.5"
-        animateOnce={true}
-        animateIn="animate__slideInUp"
+      <div
+        ref={ref}
+        className={inView ? "animate__animated animate__slideInUp" : ""}
+        style={{
+          display: "flex",
+          flexGrow: 1,
+          animationDuration: "1s",
+          animationDelay: "0.25s",
+          animationFillMode: "both"
+        }}
       >
         <div className={styles.projects}>
           <ProjectSection
@@ -172,7 +178,7 @@ export default function Project() {
           />
 
         </div>
-      </ScrollAnimation>
+      </div>
 
       <div className={styles.navBottom}>
         <Nav />

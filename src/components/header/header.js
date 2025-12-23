@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import css from "./header.module.css";
+import * as css from "./header.module.css";
 import {COLOR, FONT} from "../../styles/constants"
 
 function colorClass(color) {

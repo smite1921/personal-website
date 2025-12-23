@@ -1,9 +1,15 @@
-import React from "react";
-import styles from "./header_underline.module.css";
-import {Link} from "react-scroll";
+import React, { useEffect, useState } from "react";
+import * as styles from "./header_underline.module.css";
 import {COLOR} from "../../styles/constants";
 
 export default function HeaderUnderline({ title, color, link, flag = false}) {
+    const [ScrollLink, setScrollLink] = useState(null);
+
+    useEffect(() => {
+        import("react-scroll").then(module => {
+            setScrollLink(() => module.Link);
+        });
+    }, []);
 
     let styleClass;
     if (color === COLOR.BLUE) {
@@ -21,7 +27,7 @@ export default function HeaderUnderline({ title, color, link, flag = false}) {
     else if (color === COLOR.GREEN) {
         styleClass = styles.titleGreen;
     }
-    
+
     if (flag) {
         return (
             <div className={styles.container}>
@@ -29,10 +35,17 @@ export default function HeaderUnderline({ title, color, link, flag = false}) {
             </div>
         );
     }
+    else if (ScrollLink) {
+        return (
+            <div className={styles.container}>
+                <ScrollLink activeClass="active" to={link} spy={true} smooth={true} duration={1000} className={`${styleClass} ${styles.link}`}> {title} </ScrollLink>
+            </div>
+        );
+    }
     else {
         return (
             <div className={styles.container}>
-                <Link activeClass="active" to={link} spy={true} smooth={true} duration={1000} className={`${styleClass} ${styles.link}`}> {title} </Link>
+                <a href={`#${link}`} className={`${styleClass} ${styles.link}`}> {title} </a>
             </div>
         );
     }

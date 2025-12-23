@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../header/header"
-import styles from "./timeline.module.css"
+import * as styles from "./timeline.module.css"
 import { COLOR, FONT } from "../../styles/constants"
 
 export default function Timeline({
