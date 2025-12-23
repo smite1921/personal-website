@@ -1,0 +1,64 @@
+@import "../../../css/typography.css";
+
+.header {
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0.3rem auto;
+}
+
+.pink {
+    color: var(--smit-pink);
+}
+
+.blue {
+    color: var(--smit-blue);
+}
+
+.yellow {
+    color: var(--smit-yellow);
+}
+
+.purple {
+    color: var(--smit-purple);
+}
+
+.peach {
+    color: var(--smit-peach);
+}
+
+.green {
+    color: var(--smit-green);
+}
+
+.orange {
+    color: var(--smit-orange);
+}
+
+.white {
+    color: var(--smit-white);
+}
+
+.background {
+    color: var(--smit-background);
+}
+
+.calmed {
+    font-family: "calibre-medium",sans-serif;
+}
+
+.calsemiboldi{
+    font-family: "calibre-semibolditalic",sans-serif;
+}
+
+.avenirbook {
+    font-family: "avenir-book", sans-serif;
+}
+
+.avenirmed {
+    font-family: "avenir-medium", sans-serif;
+}
+
+.mono {
+    font-family: "mono", sans-serif;
+}
+

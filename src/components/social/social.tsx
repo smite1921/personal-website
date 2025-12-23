@@ -1,9 +1,6 @@
 import React from "react";
-import LinkedinLogo from "../logos/linkedin_logo";
-import GithubLogo from "../logos/github_logo";
-import EmailLogo from "../logos/email_logo";
-import InstagramLogo from "../logos/instagram_logo";
-import * as styles from "./social.module.css";
+import { LinkedinLogo, GithubLogo, EmailLogo, InstagramLogo } from "@/components/icons";
+import * as styles from "./Social.module.css";
 
 export default function Social() {
 

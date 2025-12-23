@@ -1,0 +1,11 @@
+export { default as AndroidLogo } from './AndroidLogo';
+export { default as CloseLogo } from './CloseLogo';
+export { default as EmailLogo } from './EmailLogo';
+export { default as GithubLogo } from './GithubLogo';
+export { default as GmLogo } from './GmLogo';
+export { default as InstagramLogo } from './InstagramLogo';
+export { default as LinkedinLogo } from './LinkedinLogo';
+export { default as MazeLogo } from './MazeLogo';
+export { default as SmitLogo } from './SmitLogo';
+export { default as TagLogo } from './TagLogo';
+export { default as UoftLogo } from './UoftLogo';

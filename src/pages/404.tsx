@@ -1,8 +1,7 @@
 import React from "react";
-import Header from "../components/header/header";
-import HeaderUnderline from "../components/header_underline/header_underline"
+import { Header, COLOR, FONT } from "@/components/ui";
+import { HeaderUnderline } from "@/components/layout";
 import * as styles from "./404.module.css";
-import {COLOR, FONT} from "../styles/constants";
 
 export default function NotFound() {
     return (

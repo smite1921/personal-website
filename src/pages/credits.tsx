@@ -1,7 +1,6 @@
 import React from "react"
-import Header from "../components/header/header"
+import { Header, COLOR, FONT } from "@/components/ui"
 import * as styles from "./credits.module.css"
-import { COLOR, FONT } from "../styles/constants"
 
 export default function Credits() {
   return (
