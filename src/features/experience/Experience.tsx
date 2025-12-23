@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react"
+import React, { useState, useCallback, ReactNode } from "react"
 import { Nav } from "@/components/layout"
 import { Header, COLOR, FONT } from "@/components/ui"
 import Stack from "./components/Stack"
@@ -7,6 +7,16 @@ import * as styles from "./Experience.module.css"
 import { useResizeDetector } from "react-resize-detector"
 import "animate.css"
 
+interface CompanySectionProps {
+  name?: string
+  role: string
+  roleTitle?: string
+  department: string
+  departmentTitle?: string
+  duration: string
+  notes: ReactNode
+}
+
 function CompanySection({
   role,
   roleTitle = "Role",
@@ -14,7 +24,7 @@ function CompanySection({
   departmentTitle = "Department",
   duration,
   notes,
-}) {
+}: CompanySectionProps) {
   return (
     <div
       className="xxs"
@@ -286,7 +296,7 @@ export default function Experience() {
     colors[activeIndex] = "#ecc20f"
   }
 
-  const hover = index => {
+  const hover = (index: number) => {
     if (index !== activeIndex) {
       setHoverIndex(index)
     }

@@ -5,7 +5,7 @@ import { CloseLogo } from "@/components/icons"
 import { COLOR } from "@/styles/constants"
 import Ham from "../Nav/Ham"
 
-export default function Sidebar(_flag) {
+export default function Sidebar() {
   const [display, setDisplay] = useState("100%")
 
   return (

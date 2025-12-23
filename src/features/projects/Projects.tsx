@@ -1,10 +1,21 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import { useInView } from "react-intersection-observer"
 import { Nav } from "@/components/layout"
 import { Header, COLOR, FONT } from "@/components/ui"
 import { AndroidLogo, TagLogo, MazeLogo } from "@/components/icons"
 import * as styles from "./Projects.module.css"
 import "animate.css"
+
+interface ProjectSectionProps {
+  name: string
+  logo: ReactNode
+  link?: string
+  github: string
+  platform: string
+  description: string
+  highlights?: string[]
+  tech: string
+}
 
 function ProjectSection({
   name,
@@ -15,7 +26,7 @@ function ProjectSection({
   description,
   highlights,
   tech,
-}) {
+}: ProjectSectionProps) {
   return (
     <div className={styles.projectSection}>
       <div className={`${styles.projectTitle} cal-l`}>
