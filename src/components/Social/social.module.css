@@ -1,19 +1,18 @@
 .container {
-    height: 2.5rem;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    justify-content: flex-start;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: flex-start;
 }
 
 .logo {
-    align-self: flex-end;
-    padding: 0 0.5rem;
-    width: 2.25rem;
-    transition: padding 0.25s;
+  align-self: flex-end;
+  padding: 0 0.5rem;
+  width: 2.25rem;
+  transition: padding 0.25s;
 }
 
 .logo:hover {
-    padding-bottom: 0.25rem;
+  padding-bottom: 0.25rem;
 }
-

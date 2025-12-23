@@ -1,96 +1,92 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: var(--smit-peach);
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--smit-peach);
+  overflow: hidden;
 }
 
 .heli {
-    fill: aqua;
+  fill: aqua;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 .text {
-    -webkit-font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased;
 }
 
 .bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-    background-color: #a83127;
-    padding:0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #a83127;
+  padding: 0.5rem;
 }
 
 .nav {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .footer {
-    text-align: center;
-    padding: 1rem;
-    background: var(--smit-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: var(--smit-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
 @media only screen and (max-width: 1300px) {
+  .container {
+    min-height: 100vh;
+    height: auto;
+  }
 
-    .container {
-        min-height: 100vh;
-        height: auto;
-    }
+  .bottom {
+    border-top: 0.5rem solid #a83127;
+    display: flex;
+    height: auto;
+    padding: 0;
+    background-color: var(--smit-background);
+  }
 
-    .bottom {
-        border-top: 0.5rem solid #a83127;
-        display: flex;
-        height: auto;
-        padding: 0;
-        background-color:var(--smit-background);
-    }
+  .mobile {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .mobile {
-        width: 100%;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-    }
+  .title {
+    padding: 1rem;
+    color: var(--smit-white);
+    background-color: var(--smit-black);
+    text-align: center;
+  }
 
-    .title {
-        padding: 1rem;
-        color: var(--smit-white);
-        background-color: var(--smit-black);
-        text-align: center;
-    }
+  .body {
+    padding: 1rem;
+    flex-grow: 1;
+  }
 
-    .body {
-        padding: 1rem;
-        flex-grow: 1;
-    }
+  .links {
+    align-self: center;
+    padding: 1rem;
+  }
 
-    .links {
-        align-self: center;
-        padding: 1rem;
-    }
+  .text {
+    display: none;
+  }
 
-    .text {
-        display: none;
-    }
+  .link {
+    display: none;
+  }
 
-    .link {
-        display: none;
-    }
-
-    .box {
-        display: none;
-    }
-
-
+  .box {
+    display: none;
+  }
 }

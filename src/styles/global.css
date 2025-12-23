@@ -1,31 +1,32 @@
 html {
-    --smit-pink:#eaa3a6;
-    --smit-blue: #7fcdd6;
-    --smit-yellow: #ecc20f;
-    --smit-purple: #c58dee;
-    --smit-peach: #eb9459;
-    --smit-green: #89e14a;
-    --smit-orange: #f27920;
-    --smit-black: #1a1a1a;
-    --smit-white: #efedec;
-    --smit-background: #232323;
-    --smit-xxs: 1rem;
-    --smit-xs:1.25rem;
-    --smit-s:1.5rem;
-    --smit-m:2.25rem;
-    --smit-l:4rem;
-    --smit-xl:7rem;
-    --smit-xxl:9rem;
-    background-color: var(--smit-background);
+  --smit-pink: #eaa3a6;
+  --smit-blue: #7fcdd6;
+  --smit-yellow: #ecc20f;
+  --smit-purple: #c58dee;
+  --smit-peach: #eb9459;
+  --smit-green: #89e14a;
+  --smit-orange: #f27920;
+  --smit-black: #1a1a1a;
+  --smit-white: #efedec;
+  --smit-background: #232323;
+  --smit-xxs: 1rem;
+  --smit-xs: 1.25rem;
+  --smit-s: 1.5rem;
+  --smit-m: 2.25rem;
+  --smit-l: 4rem;
+  --smit-xl: 7rem;
+  --smit-xxl: 9rem;
+  background-color: var(--smit-background);
 }
 
 svg {
-    vertical-align: middle;
-} 
+  vertical-align: middle;
+}
 
-html, body {
-    margin: 0;
-    overflow-x: hidden;
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
 
 /* 
@@ -37,48 +38,52 @@ Bug: https://stackoverflow.com/questions/63965489/safari-14-min-max-clamp-not-wo
 */
 
 .xxs {
-    min-height: 0vw;
-    font-size: clamp(var(--smit-xxs)/2, 1.6vw, var(--smit-xxs));
+  min-height: 0vw;
+  font-size: clamp(var(--smit-xxs) / 2, 1.6vw, var(--smit-xxs));
 }
 
 .xs {
-    min-height: 0vw;
-    font-size: clamp(var(--smit-xs)/2, 2vw, var(--smit-xs));
+  min-height: 0vw;
+  font-size: clamp(var(--smit-xs) / 2, 2vw, var(--smit-xs));
 }
 
 .s {
-    min-height: 0vw;
-    font-size: clamp(var(--smit-s)/2,2.4vw,var(--smit-s));
+  min-height: 0vw;
+  font-size: clamp(var(--smit-s) / 2, 2.4vw, var(--smit-s));
 }
 
 .m {
-    min-height: 0vw;
-    font-size: clamp(var(--smit-m)/2, 3.6vw, var(--smit-m));
+  min-height: 0vw;
+  font-size: clamp(var(--smit-m) / 2, 3.6vw, var(--smit-m));
 }
 
 .l {
-    min-height: 0vw;
-    font-size: clamp(var(--smit-l)/2,6.4vw,var(--smit-l));
+  min-height: 0vw;
+  font-size: clamp(var(--smit-l) / 2, 6.4vw, var(--smit-l));
 }
 
-.cal-l{
-    min-height: 0vw;
-    font-size: clamp(var(--smit-l)/2,6.4vw,var(--smit-l));
-    line-height: clamp(var(--smit-l)/2 - 0.5rem, -0.5000rem + 6.4000vw,var(--smit-l) - 0.5rem);
+.cal-l {
+  min-height: 0vw;
+  font-size: clamp(var(--smit-l) / 2, 6.4vw, var(--smit-l));
+  line-height: clamp(
+    var(--smit-l) / 2 - 0.5rem,
+    -0.5rem + 6.4vw,
+    var(--smit-l) - 0.5rem
+  );
 }
 
 .cal-xl {
-    min-height: 0vw;
-    font-size: clamp(var(--smit-xl)/2,11.2vw,var(--smit-xl));
-    line-height:  clamp(3rem,9.6000vw, 6rem);
+  min-height: 0vw;
+  font-size: clamp(var(--smit-xl) / 2, 11.2vw, var(--smit-xl));
+  line-height: clamp(3rem, 9.6vw, 6rem);
 }
 
 .xl {
-    min-height: 0vw;
-    font-size: clamp(var(--smit-xl)/2,11.2vw,var(--smit-xl));
+  min-height: 0vw;
+  font-size: clamp(var(--smit-xl) / 2, 11.2vw, var(--smit-xl));
 }
 
 .xxl {
-    min-height: 0vw;
-    font-size: clamp(4rem, -1.0000rem + 16.0000vw, 9rem);
+  min-height: 0vw;
+  font-size: clamp(4rem, -1rem + 16vw, 9rem);
 }

@@ -1,43 +1,39 @@
 .container {
-    display: flex;
-    background-color: rgb(23 23 23 / 10%);
-    padding: 1rem 0;
-    backdrop-filter: blur(15px);
+  display: flex;
+  background-color: rgb(23 23 23 / 10%);
+  padding: 1rem 0;
+  backdrop-filter: blur(15px);
 }
 
 .section-container {
-    display: flex;
-    justify-content: space-evenly;
-    padding-right: 2rem;
-    padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .logo-container {
-    display: flex;
-    color: white;
-    justify-content: flex-start;
-    align-items:center;
+  display: flex;
+  color: white;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .gap {
-    flex-grow: 2;
+  flex-grow: 2;
 }
 
 .logo {
-    padding: 0 1rem;
-    width: 4.5rem;
+  padding: 0 1rem;
+  width: 4.5rem;
 }
 
-
 @media only screen and (max-width: 1300px) {
+  .section-container {
+    display: none;
+  }
 
-    .section-container {
-        display: none;
-    }
-
-
-    .logo {
-        width: 3.5rem;
-    }
-
-} 
+  .logo {
+    width: 3.5rem;
+  }
+}

@@ -1,14 +1,14 @@
 .container {
-    display: flex;
-    min-height: 100vh;
-    background-color: var(--smit-background);
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--smit-background);
 }
 
 .block {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
 
 .link {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }

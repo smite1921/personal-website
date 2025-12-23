@@ -1,29 +1,29 @@
 @font-face {
-    font-family: "mono";
-    src: url("../fonts/jetbrains-mono/jetbrains-mono-regular.woff2");
+  font-family: "mono";
+  src: url("../fonts/jetbrains-mono/jetbrains-mono-regular.woff2");
 }
 
 @font-face {
-    font-family: "calibre-semibolditalic";
-    src: url("../fonts/calibre/Calibre-SemiboldItalic.woff2");
+  font-family: "calibre-semibolditalic";
+  src: url("../fonts/calibre/Calibre-SemiboldItalic.woff2");
 }
 
 @font-face {
-    font-family: "calibre-medium";
-    src: url("../fonts/calibre/Calibre-Medium.woff2");
+  font-family: "calibre-medium";
+  src: url("../fonts/calibre/Calibre-Medium.woff2");
 }
 
 @font-face {
-    font-family: "avenir-book";
-    src: url("../fonts/avenir/avenir-book.woff2");
+  font-family: "avenir-book";
+  src: url("../fonts/avenir/avenir-book.woff2");
 }
 
 @font-face {
-    font-family: "avenir-medium";
-    src: url("../fonts/avenir/avenir-medium.woff2");
+  font-family: "avenir-medium";
+  src: url("../fonts/avenir/avenir-medium.woff2");
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
 }

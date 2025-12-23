@@ -1,42 +1,38 @@
 .button {
-    display: inline-block;
-    font-family: "calibre-medium",sans-serif;
-    color: var(--smit-background);
-    background-color: var(--smit-green);
-    text-decoration: none;
-    padding: 0.75rem 0.75rem;
-    text-align: center;
-    border: none;
-    margin: 0.3rem 0;
-
+  display: inline-block;
+  font-family: "calibre-medium", sans-serif;
+  color: var(--smit-background);
+  background-color: var(--smit-green);
+  text-decoration: none;
+  padding: 0.75rem 0.75rem;
+  text-align: center;
+  border: none;
+  margin: 0.3rem 0;
 }
 
 .block {
-    position: absolute;
-    overflow: hidden;
-    transform: translateX(-100%);
-    transition: transform 275ms ease;
+  position: absolute;
+  overflow: hidden;
+  transform: translateX(-100%);
+  transition: transform 275ms ease;
 }
 
-.block::before { 
-    display: inline-block;
-    content: attr(data-text);
-    color: var(--smit-white);
-    transform: translateX(100%);
-    transition: transform 275ms ease;
-  }
-
+.block::before {
+  display: inline-block;
+  content: attr(data-text);
+  color: var(--smit-white);
+  transform: translateX(100%);
+  transition: transform 275ms ease;
+}
 
 .button:active {
-    outline: none;
+  outline: none;
 }
-
 
 .button:hover .block::before {
-    transform: translate(0);
+  transform: translate(0);
 }
 
-.button:hover .block{
-    transform: translate(0);
+.button:hover .block {
+  transform: translate(0);
 }
-

@@ -1,15 +1,13 @@
 @media only screen and (max-width: 1300px) {
+  .text {
+    display: none;
+  }
 
-    .text {
-        display: none;
-    }
+  .link {
+    display: none;
+  }
 
-    .link {
-        display: none;
-    }
-
-    .box {
-        display: none;
-    }
-
+  .box {
+    display: none;
+  }
 }
