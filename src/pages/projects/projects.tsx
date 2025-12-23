@@ -30,7 +30,7 @@ function ProjectSection({
       </div>
 
       <div className={`${styles.projectContent} xxs`}>
-        <div className={styles.projectContentHeader}>
+        <div>
           <div className={styles.projectContentPlatform}>
             <b>
               <Header title="Platform" font={FONT.MONO} color={COLOR.WHITE} />
@@ -104,7 +104,7 @@ function ProjectSection({
             </ul>
           </div>
         </div>
-          <div className={styles.projectContentFooter}>
+          <div>
           <b>
             <Header
               title="Technologies Used:"

@@ -3,13 +3,21 @@ import Header from "../header/header"
 import * as styles from "./timeline.module.css"
 import { COLOR, FONT } from "../../styles/constants"
 
+interface TimelineProps {
+  activeIndex: number;
+  hoverIndex: number;
+  setHover: (index: number) => void;
+  setActive: (index: number) => void;
+  hover: (index: number) => void;
+}
+
 export default function Timeline({
   activeIndex,
   hoverIndex,
   setHover,
   setActive,
   hover,
-}) {
+}: TimelineProps) {
   const array = Array.from(Array(264).keys())
   const grid = array.map(index => {
     // top right corner

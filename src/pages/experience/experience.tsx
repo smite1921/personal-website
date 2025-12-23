@@ -384,7 +384,7 @@ export default function Experience() {
 
             <ul
               style={{ paddingInlineStart: "2rem" }}
-              className={`${styles.experienceBoxList} xs`}
+              className="xs"
             >
               <li
                 onClick={() => setActiveIndex(0)}
