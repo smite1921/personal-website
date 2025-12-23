@@ -1,7 +1,7 @@
 
 import React from "react";
 
-import styles from "./sfskyline.module.css";
+import * as styles from "./sfskyline.module.css";
 
 export default function SFSkyline() {
     return <svg id="a03d5d0a-d0e8-408f-b0b8-c0372bdb0623" data-name="e7cc71de-40c1-4f9a-93a1-42e94b76b12e" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1599 723">

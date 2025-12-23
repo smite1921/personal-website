@@ -2,7 +2,7 @@ import React from "react"
 import HeaderUnderline from "../header_underline/header_underline"
 import SmitLogo from "../logos/smit_logo"
 import Sidebar from "../sidebar/sidebar"
-import styles from "./nav.module.css"
+import * as styles from "./nav.module.css"
 import { COLOR } from "../../styles/constants"
 
 export default function Nav() {

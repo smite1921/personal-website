@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header/header";
 import HeaderUnderline from "../components/header_underline/header_underline"
-import styles from "./404.module.css";
+import * as styles from "./404.module.css";
 import {COLOR, FONT} from "../styles/constants";
 
 export default function Soon() {
@@ -21,7 +21,16 @@ export default function Soon() {
 
         </div>
 
-        
+
       </div>
+    );
+}
+
+export function Head() {
+    return (
+        <>
+            <title>Coming Soon | Smit Patel</title>
+            <meta name="description" content="This page is coming soon" />
+        </>
     );
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../components/header/header"
-import styles from "./credits.module.css"
+import * as styles from "./credits.module.css"
 import { COLOR, FONT } from "../styles/constants"
 
 export default function Credits() {
@@ -39,4 +39,13 @@ export default function Credits() {
       </div>
     </div>
   )
+}
+
+export function Head() {
+  return (
+    <>
+      <title>Credits | Smit Patel</title>
+      <meta name="description" content="Credits and attributions for assets used on this website" />
+    </>
+  );
 }

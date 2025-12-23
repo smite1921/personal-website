@@ -1,9 +1,8 @@
 import React from "react";
-import Helmet from "react-helmet";
 
 export default function Head() {
     return (
-        <Helmet>
+        <>
             {/* <!-- Primary Meta Tags --> */}
             <title>Smit Patel - Software Engineer </title>
             <meta name="title" content="Smit Patel - Software Engineer "/>
@@ -45,6 +44,6 @@ export default function Head() {
             <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
             <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-        </Helmet>
+        </>
     );
 }
