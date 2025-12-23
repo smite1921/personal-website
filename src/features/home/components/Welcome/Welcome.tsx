@@ -1,5 +1,6 @@
 import React from "react"
 import { Header, Button, COLOR, FONT } from "@/components/ui"
+import { siteConfig } from "@/config"
 import * as styles from "./Welcome.module.css"
 
 export default function Welcome() {
@@ -58,7 +59,7 @@ export default function Welcome() {
 
       <div className="cal-l">
         <Header
-          title="san francisco, california"
+          title={siteConfig.city.location}
           color={COLOR.BLUE}
           font={FONT.CAL_MED}
         />
