@@ -2,17 +2,19 @@ import React from "react"
 import { Nav } from "@/components/layout"
 import { Social } from "@/components/Social"
 import { Header, COLOR, FONT } from "@/components/ui"
-import SFSkyline from "./components/SFSkyline"
+import { siteConfig } from "@/config"
 import * as styles from "./Contact.module.css"
 
 export default function Contact() {
+  const Skyline = siteConfig.city.skyline
+
   return (
     <div id="contact" className={styles.container}>
       <div className={styles.nav}>
         <Nav />
       </div>
 
-      <SFSkyline />
+      <Skyline />
 
       <div className={styles.bottom}>
         <div className={styles.mobile}>
@@ -22,7 +24,7 @@ export default function Contact() {
 
           <div className={`${styles.body} m`}>
             <Header
-              title="location: san francisco, california"
+              title={`location: ${siteConfig.city.location}`}
               color={COLOR.WHITE}
               font={FONT.AVENIR_MED}
             />
