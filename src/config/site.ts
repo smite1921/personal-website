@@ -25,7 +25,7 @@ const cities: Record<CityKey, CityConfig> = {
 }
 
 // Change this to switch cities
-export const CURRENT_CITY: CityKey = "toronto"
+export const CURRENT_CITY: CityKey = "san-francisco"
 
 export const siteConfig = {
   city: cities[CURRENT_CITY],
