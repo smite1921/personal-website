@@ -124,6 +124,13 @@ export default function Head() {
         name="msapplication-square310x310logo"
         content="mstile-310x310.png"
       />
+
+      {/* <!-- Umami Analytics --> */}
+      <script
+        defer
+        src="https://cloud.umami.is/script.js"
+        data-website-id="43b04023-bfa8-4a45-a32d-3ebfcc91604c"
+      />
     </>
   )
 }
